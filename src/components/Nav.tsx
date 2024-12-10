@@ -59,33 +59,61 @@ const Nav: React.FC = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center space-x-6 text-black-600 font-bold">
           <li>
-            <button className="hover:text-black">Features</button>
+            <button className="relative overflow-hidden group rounded-lg px-3 py-2">
+              <span className="relative z-10">Features</span>
+              <span className="absolute inset-0 bg-gray-200 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out"></span>
+            </button>
           </li>
           <li>
-            <button className="hover:text-black">Solutions</button>
+            <button className="relative overflow-hidden group rounded-lg px-3 py-2">
+              <span className="relative z-10">Solutions</span>
+              <span className="absolute inset-0 bg-gray-200 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out"></span>
+            </button>
           </li>
           <li>
-            <button className="hover:text-black">Contact</button>
+            <button className="relative overflow-hidden group rounded-lg px-3 py-2">
+              <span className="relative z-10">Contact</span>
+              <span className="absolute inset-0 bg-gray-200 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out"></span>
+            </button>
           </li>
           <li>
-            <button className="hover:text-black">Cases</button>
+            <button className="relative overflow-hidden group rounded-lg px-3 py-2">
+              <span className="relative z-10">Cases</span>
+              <span className="absolute inset-0 bg-gray-200 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out"></span>
+            </button>
           </li>
           <li>
-            <button className="hover:text-black">Blog</button>
+            <button className="relative overflow-hidden group rounded-lg px-3 py-2">
+              <span className="relative z-10">Blog</span>
+              <span className="absolute inset-0 bg-gray-200 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out"></span>
+            </button>
           </li>
           <li>
-            <button className="hover:text-black">About</button>
+            <button className="relative overflow-hidden group rounded-lg px-3 py-2">
+              <span className="relative z-10">About</span>
+              <span className="absolute inset-0 bg-gray-200 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out"></span>
+            </button>
           </li>
           <li>
-            <button className="hover:text-black">Pricing</button>
+            <button className="relative overflow-hidden group rounded-lg px-3 py-2">
+              <span className="relative z-10">Pricing</span>
+              <span className="absolute inset-0 bg-gray-200 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out"></span>
+            </button>
           </li>
           <li>
-            <button className="hover:text-black">Shop</button>
+            <button className="relative overflow-hidden group rounded-lg px-3 py-2">
+              <span className="relative z-10">Shop</span>
+              <span className="absolute inset-0 bg-gray-200 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out"></span>
+            </button>
           </li>
           <li>
-            <button className="hover:text-black">FAQ</button>
+            <button className="relative overflow-hidden group rounded-lg px-3 py-2">
+              <span className="relative z-10">FAQ</span>
+              <span className="absolute inset-0 bg-gray-200 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out"></span>
+            </button>
           </li>
         </ul>
+
 
         {/* Right Section */}
         <div className="hidden md:flex items-center space-x-6">
