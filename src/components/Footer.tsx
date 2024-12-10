@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     <div className="relative bg-white py-12">
 
       {/* Centered Footer Div */}
-      <div className="relative z-10 mx-auto w-96 md:max-w-7xl px-14 md:px-16 py-12 rounded-xl bg-black text-white">
+      <div className="relative z-10 mx-auto w-11/12 px-14 md:px-16 py-12 rounded-xl bg-black text-white">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row md:justify-between mb-28">
           {/* Left Section */}
