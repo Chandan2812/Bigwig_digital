@@ -22,11 +22,11 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Rotating Cards */}
-      <div className="relative md:w-80 w-56 h-96">
+      <div className="relative md:w-80 w-52 h-96">
         {images.map((src, index) => (
           <div
             key={index}
-            className={`absolute md:w-80 w-56 h-[400px] rounded-lg transition-transform duration-500 ease-in-out
+            className={`absolute md:w-80 w-52 h-[400px] rounded-lg transition-transform duration-500 ease-in-out
               ${index === 0 ? "z-20" : "z-10"}
               card-${index}`}
           >
