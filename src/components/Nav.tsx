@@ -4,7 +4,7 @@ const Nav: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white">
+    <nav className="bg-white sticky top-0 z-50 ">
       <div className="container mx-auto px-4 flex justify-between items-center py-3">
         {/* Logo Section */}
         <div className="flex items-center">
