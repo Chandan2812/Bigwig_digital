@@ -45,15 +45,15 @@ const Hero: React.FC = () => {
       <style>
         {`
           @keyframes rotateCards {
-            0%, 33.3% {
+            0% {
               transform: translateX(0%) scale(1);
               z-index: 20;
             }
-            50% {
+            33% {
               transform: translateX(-50%) scale(0.8);
               z-index: 10;
             }
-            83.3% {
+            66% {
               transform: translateX(50%) scale(0.8);
               z-index: 10;
             }
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
             animation-delay: 4s;
           }
         `}
-      </style>
+      </style>
     </div>
   );
 };
