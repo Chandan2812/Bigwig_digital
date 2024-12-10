@@ -8,10 +8,10 @@ const Hero: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-white mt-16">
+    <div className="flex flex-col items-center justify-center bg-white mt-16">
       {/* Header Section */}
-      <div className="text-center space-y-4">
-        <h1 className="text-7xl font-bold">
+      <div className="text-center mb-8">
+        <h1 className="text-4xl md:text-7xl font-bold">
           Say goodbye 👋 <br />
           <span className="line-through text-gray-400">to old marketing</span>
         </h1>
@@ -21,14 +21,14 @@ const Hero: React.FC = () => {
         <button className="mt-4 px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800">
           Sign up for a demo
         </button>
-      </div>
+      </div>
 
       {/* Rotating Cards */}
-      <div className="relative w-80 h-[400px]">
+      <div className="relative w-64 sm:w-80 h-96">
         {images.map((src, index) => (
           <div
             key={index}
-            className={`absolute w-80 h-[400px] rounded-lg transition-transform duration-500 ease-in-out
+            className={`absolute w-64 sm:w-80 h-[400px] rounded-lg transition-transform duration-500 ease-in-out
               ${index === 0 ? "z-20" : "z-10"}
               card-${index}`}
           >
@@ -45,15 +45,15 @@ const Hero: React.FC = () => {
       <style>
         {`
           @keyframes rotateCards {
-            0% {
+            0%, 33.3% {
               transform: translateX(0%) scale(1);
               z-index: 20;
             }
-            33% {
+            50% {
               transform: translateX(-50%) scale(0.8);
               z-index: 10;
             }
-            66% {
+            83.3% {
               transform: translateX(50%) scale(0.8);
               z-index: 10;
             }
