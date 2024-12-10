@@ -9,21 +9,7 @@ const Nav: React.FC = () => {
         {/* Logo Section */}
         <div className="flex items-center">
           <span className="text-black font-bold text-lg flex items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="w-6 h-6 mr-1"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 5.75v12.5M20.25 5.75v12.5M8.75 9.75l3.5-4 3.5 4M8.75 14.25l3.5 4 3.5-4"
-              />
-            </svg>
-            engage®
+            BigwigMedia®
           </span>
         </div>
 
