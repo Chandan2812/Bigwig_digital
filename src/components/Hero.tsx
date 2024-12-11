@@ -8,13 +8,15 @@ const Hero: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center bg-white mt-16">
+    <div className="flex flex-col items-center justify-center bg-white mt-5">
       {/* Header Section */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl md:text-7xl font-bold">
-          Say goodbye 👋 <br />
-          <span className="line-through text-gray-400">to old marketing</span>
-        </h1>
+      <h1 className="text-4xl md:text-7xl font-bold">
+        Say goodbye 👋 <br />
+      <span className="line-through text-gray-400">to old marketing</span> <br />
+        Try BigWigMedia
+</h1>
+
         
         <button className="mt-4 px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800">
           Sign up for a demo
