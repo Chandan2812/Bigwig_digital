@@ -7,6 +7,7 @@ import FlipCard from '../components/FlipCard'
 import ImageSlider from '../components/ImageSlider'
 import ScrollOverlappingText from '../components/RotatingText'
 import ScrollOverlappingSections from '../components/ScrollSection'
+import SunflowerEffect from '../components/ScatterEffectSection'
 
 function Landing() {
   return (
@@ -18,6 +19,7 @@ function Landing() {
     <FlipCard/>
     <ScrollOverlappingSections/>
     <CaseCard/>
+    <SunflowerEffect/>
     <Footer/>
     </>
   )
