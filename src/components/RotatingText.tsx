@@ -26,7 +26,7 @@ const ScrollOverlappingText: React.FC = () => {
       </h1>
 
       {/* Desktop view */}
-      <div className="hidden md:block relative w-full h-64 overflow-hidden">
+      <div className="hidden md:block relative w-full h-96 overflow-hidden">
         {/* Display the current text */}
         <div className="absolute w-full h-full flex md:items-center justify-center">
           {items.map((item, index) => (

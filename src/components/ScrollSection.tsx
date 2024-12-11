@@ -1,11 +1,62 @@
-import React, { useState } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const ScrollOverlappingSections: React.FC = () => {
-  const sections = [
+type Section = {
+  id: number;
+  backgroundColor: string;
+  content: React.ReactNode;
+  image: string;
+};
+
+type AnimatedSectionProps = {
+  section: Section;
+  isReversed: boolean;
+};
+
+const AnimatedSection: React.FC<AnimatedSectionProps> = ({ section, isReversed }) => {
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className={`flex flex-col md:flex-row gap-9 w-11/12 mx-auto mb-20 rounded-xl h-[70vh] ${
+        isReversed ? "md:flex-row-reverse" : ""
+      } items-center py-8 px-8 md:px-16 ${section.backgroundColor}`}
+    >
+      <motion.div
+        initial={{ opacity: 0, x: isReversed ? 50 : -50 }}
+        animate={inView ? { opacity: 1, x: 0 } : {}}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        className="w-full md:w-1/2 text-black"
+      >
+        {section.content}
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={inView ? { opacity: 1, scale: 1 } : {}}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+        className="w-full md:w-1/2 flex justify-center"
+      >
+        <img
+          src={section.image}
+          alt={`Section ${section.id}`}
+          className="rounded-lg shadow-lg w-full h-[60vh]"
+        />
+      </motion.div>
+    </motion.div>
+  );
+};
+
+const ScrollSections: React.FC = () => {
+  const sections: Section[] = [
     {
       id: 1,
-      backgroundColor: "#E9D5FF",
+      backgroundColor: "bg-purple-300",
       content: (
         <>
           <h1 className="text-4xl font-bold">Social Media Campaign</h1>
@@ -20,11 +71,11 @@ const ScrollOverlappingSections: React.FC = () => {
           </p>
         </>
       ),
-      image: "https://via.placeholder.com/400x300?text=Image+1",
+      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0c75865ce04bc4a2f6962_features-1-p-800.webp",
     },
     {
       id: 2,
-      backgroundColor: "#BFDBFE",
+      backgroundColor: "bg-blue-300",
       content: (
         <>
           <h1 className="text-4xl font-bold">Marketing Strategy</h1>
@@ -39,11 +90,11 @@ const ScrollOverlappingSections: React.FC = () => {
           </p>
         </>
       ),
-      image: "https://via.placeholder.com/400x300?text=Image+2",
+      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0c91de4d89a6bc9f7400e_features-2-p-800.webp",
     },
     {
       id: 3,
-      backgroundColor: "#BBF7D0",
+      backgroundColor: "bg-green-300",
       content: (
         <>
           <h1 className="text-4xl font-bold">Creative Designs</h1>
@@ -56,110 +107,21 @@ const ScrollOverlappingSections: React.FC = () => {
           </p>
         </>
       ),
-      image: "https://via.placeholder.com/400x300?text=Image+3",
+      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handleInView = (index: number, inView: boolean) => {
-    if (inView) {
-      setCurrentIndex(index);
-    }
-  };
-
   return (
-    <div className="flex flex-col items-center justify-center mt-20 space-y-10 px-4  md:px-28 mb-20">
-
-      {/* Desktop view */}
-      <div className="hidden md:block relative w-full h-[500px] overflow-hidden rounded-3xl">
-        {/* Display the current section */}
-        <div className="absolute w-full h-full flex items-center justify-center">
-          {sections.map((section, index) => (
-            <div
-              key={section.id}
-              className={`absolute flex flex-col md:flex-row items-center justify-center text-center md:text-left transition-opacity duration-700 ease-in-out w-full h-full p-8 rounded-lg shadow-md mx-4 my-6 ${
-                index === currentIndex ? "opacity-100 scale-100" : "opacity-0 scale-90"
-              }`}
-              style={{ backgroundColor: section.backgroundColor }}
-            >
-              <img
-                src={section.image}
-                alt={`Section ${section.id}`}
-                className="w-64 h-48 md:w-96 md:h-64 rounded-3xl object-cover mr-4"
-              />
-              <div>{section.content}</div>
-            </div>
-          ))}
-        </div>
-
-        {/* Scrollable trigger sections */}
-        <div className="scrollable-container">
-          {sections.map((_, index) => (
-            <div key={index} className="h-[500px] flex-shrink-0">
-              <InViewTrigger index={index} onInView={handleInView} />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Mobile view */}
-      <div className="md:hidden flex flex-col space-y-8 items-center">
-        {sections.map((section) => (
-          <div
-            key={section.id}
-            className="flex flex-col items-center text-center p-8 rounded-lg shadow-md mx-4 my-6"
-            style={{ backgroundColor: section.backgroundColor }}
-          >
-            <img
-              src={section.image}
-              alt={`Section ${section.id}`}
-              className="w-64 h-48 rounded-lg object-cover mb-4"
-            />
-            <div>{section.content}</div>
-          </div>
-        ))}
-      </div>
-
-      <style>{`
-        .scrollable-container {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          overflow-y: scroll;
-        }
-
-        /* Hide scrollbar in WebKit browsers */
-        .scrollable-container::-webkit-scrollbar {
-          width: 0;
-          height: 0;
-        }
-
-        /* Hide scrollbar in Firefox */
-        .scrollable-container {
-          scrollbar-width: none;
-        }
-      `}</style>
+    <div>
+      {sections.map((section, index) => (
+        <AnimatedSection
+          key={section.id}
+          section={section}
+          isReversed={index % 2 === 0}
+        />
+      ))}
     </div>
   );
 };
 
-type InViewTriggerProps = {
-  index: number;
-  onInView: (index: number, inView: boolean) => void;
-};
-
-const InViewTrigger: React.FC<InViewTriggerProps> = ({ index, onInView }) => {
-  const { ref, inView } = useInView({
-    threshold: 0.5, // Trigger when 50% of the element is in view
-    triggerOnce: false,
-  });
-
-  React.useEffect(() => {
-    onInView(index, inView);
-  }, [inView, index, onInView]);
-
-  return <div ref={ref} className="h-full w-full"></div>;
-};
-
-export default ScrollOverlappingSections;
+export default ScrollSections;
