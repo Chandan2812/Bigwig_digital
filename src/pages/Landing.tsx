@@ -6,6 +6,7 @@ import Hero from '../components/Hero'
 import FlipCard from '../components/FlipCard'
 import ImageSlider from '../components/ImageSlider'
 import ScrollSections from '../components/ScrollSection'
+import ScrollOverlappingText from '../components/RotatingText'
 
 function Landing() {
   return (
@@ -13,6 +14,7 @@ function Landing() {
     <Nav/>
     <Hero/>
     <ImageSlider/>
+    <ScrollOverlappingText/>
     <FlipCard/>
     <ScrollSections/>
     <CaseCard/>
