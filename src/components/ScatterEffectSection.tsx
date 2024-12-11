@@ -29,22 +29,31 @@ const SunflowerEffect: React.FC = () => {
   const totalImages = images.length;
 
   return (
-    <div className="min-h-[150vh]  flex items-center justify-center relative">
-      <div ref={ref} className="relative w-[500px] h-[500px] flex items-center justify-center">
+    <div className="md:min-h-[150vh] flex items-center justify-center relative">
+      <div
+        ref={ref}
+        className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[500px] lg:h-[500px] flex items-center justify-center"
+      >
         {images.map((image, index) => {
           const angle = (360 / totalImages) * index;
-          const targetX = Math.cos((angle * Math.PI) / 180) * radius;
-          const targetY = Math.sin((angle * Math.PI) / 180) * radius;
+          const targetX =
+            radius === 250 ? Math.cos((angle * Math.PI) / 180) * radius : 0;
+          const targetY =
+            radius === 250 ? Math.sin((angle * Math.PI) / 180) * radius : 0;
 
           return (
             <div
               key={index}
-              className="absolute transition-transform duration-500 ease-out"
+              className={`absolute ${
+                radius === 250 ? "sm:transition-transform sm:duration-500" : ""
+              } ease-out sm:block hidden`}
               style={{
-                transform: `translate(${targetX}px, ${targetY}px) scale(${radius === 250 ? 1 : 0.8})`,
+                transform: `translate(${targetX}px, ${targetY}px) scale(${
+                  radius === 250 ? 1 : 0.8
+                })`,
                 opacity: radius === 250 ? 1 : 0.7,
-                width: "80px",
-                height: "80px",
+                width: "60px",
+                height: "60px",
                 borderRadius: "50%",
                 overflow: "hidden",
               }}
@@ -60,21 +69,19 @@ const SunflowerEffect: React.FC = () => {
       </div>
 
       <div
-        className={`absolute text-center transition-all transform flex flex-col items-center justify-center w-[500px] h-[500px] ${
-          radius === 250 ? "opacity-100 scale-100" : "opacity-0 scale-90"
-        }`}
+        className="absolute text-center transition-all transform flex flex-col items-center justify-center w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[500px] lg:h-[500px]"
         style={{
           transition: "opacity 0.5s ease, transform 0.5s ease",
         }}
       >
-        <h1 className="text-4xl font-bold leading-relaxed text-gray-800">
-          Transform <br /> engagement into real {" "}
+        <h1 className="text-xl font-bold leading-relaxed text-gray-800 lg:text-4xl">
+          Transform <br /> engagement into real{" "}
           <span role="img" aria-label="clients">
             ✌️
           </span>{" "}
           clients
         </h1>
-        <button className="mt-6 px-6 py-3 text-white bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-purple-600 hover:to-indigo-500 rounded-full shadow-lg">
+        <button className="mt-6 px-4 py-2 text-sm lg:px-6 lg:py-3 lg:text-base text-white bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-purple-600 hover:to-indigo-500 rounded-full shadow-lg">
           Sign up for a demo
         </button>
       </div>

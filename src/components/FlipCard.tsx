@@ -41,7 +41,7 @@ const FlipCard = () => {
   };
 
   return (
-    <div className="flex flex-wrap justify-center gap-6 pt-14 pb-10 md:pb-28 w-11/12 mx-auto mt-10 mb-20 sm:flex-col md:flex-row">
+    <div className="flex flex-wrap justify-center gap-6 pt-14 pb-10 md:pb-28 w-11/12 md:w-full mx-auto mt-10 mb-20 sm:flex-col md:flex-row">
       {cards.map((card, index) => (
         <div
           key={card.id}
