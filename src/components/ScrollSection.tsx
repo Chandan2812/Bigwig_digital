@@ -69,10 +69,10 @@ const ScrollOverlappingSections: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center mt-20 space-y-10 px-6 mb-20">
+    <div className="flex flex-col items-center justify-center mt-20 space-y-10 px-4  md:px-28 mb-20">
 
       {/* Desktop view */}
-      <div className="hidden md:block relative w-full h-[500px] overflow-hidden">
+      <div className="hidden md:block relative w-full h-[500px] overflow-hidden rounded-3xl">
         {/* Display the current section */}
         <div className="absolute w-full h-full flex items-center justify-center">
           {sections.map((section, index) => (
@@ -86,7 +86,7 @@ const ScrollOverlappingSections: React.FC = () => {
               <img
                 src={section.image}
                 alt={`Section ${section.id}`}
-                className="w-64 h-48 md:w-96 md:h-64 rounded-lg object-cover mr-4"
+                className="w-64 h-48 md:w-96 md:h-64 rounded-3xl object-cover mr-4"
               />
               <div>{section.content}</div>
             </div>
