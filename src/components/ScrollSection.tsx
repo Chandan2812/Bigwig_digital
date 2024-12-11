@@ -15,7 +15,9 @@ type AnimatedSectionProps = {
 };
 
 const AnimatedSection: React.FC<AnimatedSectionProps> = ({ section, isReversed }) => {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
+  const [ref, inView] = useInView({
+    threshold: 0.4,   // Trigger when 20% of the section is visible
+  });
 
   return (
     <motion.div

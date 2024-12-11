@@ -22,6 +22,7 @@ const ImageSlider: React.FC = () => {
       autoplay: true, // Enable automatic sliding
       autoplaySpeed: 0, // Continuous autoplay with no delay
       cssEase: "linear",
+      arrows: false,
       responsive: [
         {
             breakpoint: 1024,
