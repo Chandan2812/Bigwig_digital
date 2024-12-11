@@ -29,7 +29,7 @@ const SunflowerEffect: React.FC = () => {
   const totalImages = images.length;
 
   return (
-    <div className="min-h-[200vh]  flex items-center justify-center relative">
+    <div className="min-h-[150vh]  flex items-center justify-center relative">
       <div ref={ref} className="relative w-[500px] h-[500px] flex items-center justify-center">
         {images.map((image, index) => {
           const angle = (360 / totalImages) * index;
