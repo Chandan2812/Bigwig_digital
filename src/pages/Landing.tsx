@@ -5,6 +5,7 @@ import CaseCard from '../components/CaseCard'
 import Hero from '../components/Hero'
 import FlipCard from '../components/FlipCard'
 import ImageSlider from '../components/ImageSlider'
+import ScrollSections from '../components/ScrollSection'
 
 function Landing() {
   return (
@@ -13,6 +14,7 @@ function Landing() {
     <Hero/>
     <ImageSlider/>
     <FlipCard/>
+    <ScrollSections/>
     <CaseCard/>
     <Footer/>
     </>
