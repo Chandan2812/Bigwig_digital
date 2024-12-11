@@ -41,7 +41,7 @@ const ImageSlider: React.FC = () => {
     };
   
     return (
-      <div className="max-w-7xl mx-auto h-32 bg-white mt-20">
+      <div className="w-11/12 mx-auto h-32 bg-white mt-20">
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index} className="flex justify-center">
