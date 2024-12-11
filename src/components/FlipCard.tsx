@@ -43,7 +43,7 @@ const FlipCard: React.FC = () => {
   const group2 = solutions.slice(2); // Remaining three cards
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16">
       {/* Header */}
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center mb-20">

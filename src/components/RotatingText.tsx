@@ -11,17 +11,24 @@ const ScrollOverlappingText: React.FC = () => {
     }
   };
 
+  // Light colors
+  const colors = ["#D1E7FF", "#f2c7dd", "#f5b87f", "#f0ce73"];
+  // Different rotation values for tilt effect
+  const rotations = ["-5deg", "5deg", "3deg", "-3deg"];
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 mt-20">
-      <h1 className="max-w-7xl text-4xl md:text-7xl mx-auto font-bold mb-6">
+    <div className="flex flex-col md:items-center justify-center mt-20">
+      <h1 className="max-w-7xl text-4xl md:text-7xl mx-auto font-bold mb-6 text-center">
         We help you with{" "}
         <span role="img" aria-label="thumbs up">
           👍
         </span>
       </h1>
-      <div className="relative w-full max-w-md h-64 overflow-hidden">
+
+      {/* Desktop view */}
+      <div className="hidden md:block relative w-full h-64 overflow-hidden">
         {/* Display the current text */}
-        <div className="absolute w-full h-full flex items-center justify-center">
+        <div className="absolute w-full h-full flex md:items-center justify-center">
           {items.map((item, index) => (
             <span
               key={index}
@@ -29,9 +36,10 @@ const ScrollOverlappingText: React.FC = () => {
                 index === currentIndex ? "opacity-100 scale-100" : "opacity-0 scale-90"
               }`}
               style={{
-                backgroundColor: "#E0E7FF",
-                padding: "0.5rem 1rem",
+                backgroundColor: colors[index], // Apply light colors
+                padding: "1.5rem 3.5rem", // Padding around the text
                 borderRadius: "999px",
+                transform: `rotate(${rotations[index]})`, // Apply rotation for tilt
               }}
             >
               {item}
@@ -49,13 +57,30 @@ const ScrollOverlappingText: React.FC = () => {
         </div>
       </div>
 
+      {/* Mobile view */}
+      <div className=" md:hidden flex flex-col space-y-4 items-center mb-10">
+        {items.map((item, index) => (
+          <span
+            key={index}
+            className="text-3xl font-semibold"
+            style={{
+              backgroundColor: colors[index], // Apply light colors
+              padding: "1.5rem 3.5rem", // Padding around the text
+              borderRadius: "999px", // Rounded pill shape
+              transform: `rotate(${rotations[index]})`, // Apply tilt effect
+            }}
+          >
+            {item}
+          </span>
+        ))}
+      </div>
+
       <style>{`
-                .scrollable-container {
+        .scrollable-container {
           position: absolute;
           width: 100%;
           height: 100%;
           overflow-y: scroll;
-          max-height: 100%;
         }
 
         /* Hide scrollbar in WebKit browsers */
@@ -67,8 +92,8 @@ const ScrollOverlappingText: React.FC = () => {
         /* Hide scrollbar in Firefox */
         .scrollable-container {
           scrollbar-width: none;
-        }     
-              `}</style>
+        }
+      `}</style>
     </div>
   );
 };

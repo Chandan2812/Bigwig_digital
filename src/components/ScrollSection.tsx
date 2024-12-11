@@ -1,61 +1,11 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 
-type Section = {
-  id: number;
-  backgroundColor: string;
-  content: React.ReactNode;
-  image: string;
-};
-
-type AnimatedSectionProps = {
-  section: Section;
-  isReversed: boolean;
-};
-
-const AnimatedSection: React.FC<AnimatedSectionProps> = ({ section, isReversed }) => {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
-
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className={`flex flex-col md:flex-row w-11/12 mx-auto mb-20 rounded-xl h-[80vh] ${
-        isReversed ? "md:flex-row-reverse" : ""
-      } items-center py-12 px-8 md:px-16 ${section.backgroundColor}`}
-    >
-      <motion.div
-        initial={{ opacity: 0, x: isReversed ? 50 : -50 }}
-        animate={inView ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-        className="w-full md:w-1/2 text-black"
-      >
-        {section.content}
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={inView ? { opacity: 1, scale: 1 } : {}}
-        transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-        className="w-full md:w-1/2 flex justify-center"
-      >
-        <img
-          src={section.image}
-          alt={`Section ${section.id}`}
-          className="rounded-lg shadow-lg"
-        />
-      </motion.div>
-    </motion.div>
-  );
-};
-
-const ScrollSections: React.FC = () => {
-  const sections: Section[] = [
+const ScrollOverlappingSections: React.FC = () => {
+  const sections = [
     {
       id: 1,
-      backgroundColor: "bg-purple-300",
+      backgroundColor: "#E9D5FF",
       content: (
         <>
           <h1 className="text-4xl font-bold">Social Media Campaign</h1>
@@ -74,7 +24,7 @@ const ScrollSections: React.FC = () => {
     },
     {
       id: 2,
-      backgroundColor: "bg-blue-300",
+      backgroundColor: "#BFDBFE",
       content: (
         <>
           <h1 className="text-4xl font-bold">Marketing Strategy</h1>
@@ -93,7 +43,7 @@ const ScrollSections: React.FC = () => {
     },
     {
       id: 3,
-      backgroundColor: "bg-green-300",
+      backgroundColor: "#BBF7D0",
       content: (
         <>
           <h1 className="text-4xl font-bold">Creative Designs</h1>
@@ -110,17 +60,106 @@ const ScrollSections: React.FC = () => {
     },
   ];
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleInView = (index: number, inView: boolean) => {
+    if (inView) {
+      setCurrentIndex(index);
+    }
+  };
+
   return (
-    <div>
-      {sections.map((section, index) => (
-        <AnimatedSection
-          key={section.id}
-          section={section}
-          isReversed={index % 2 === 0}
-        />
-      ))}
+    <div className="flex flex-col items-center justify-center mt-20 space-y-10 px-6 mb-20">
+
+      {/* Desktop view */}
+      <div className="hidden md:block relative w-full h-[500px] overflow-hidden">
+        {/* Display the current section */}
+        <div className="absolute w-full h-full flex items-center justify-center">
+          {sections.map((section, index) => (
+            <div
+              key={section.id}
+              className={`absolute flex flex-col md:flex-row items-center justify-center text-center md:text-left transition-opacity duration-700 ease-in-out w-full h-full p-8 rounded-lg shadow-md mx-4 my-6 ${
+                index === currentIndex ? "opacity-100 scale-100" : "opacity-0 scale-90"
+              }`}
+              style={{ backgroundColor: section.backgroundColor }}
+            >
+              <img
+                src={section.image}
+                alt={`Section ${section.id}`}
+                className="w-64 h-48 md:w-96 md:h-64 rounded-lg object-cover mr-4"
+              />
+              <div>{section.content}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Scrollable trigger sections */}
+        <div className="scrollable-container">
+          {sections.map((_, index) => (
+            <div key={index} className="h-[500px] flex-shrink-0">
+              <InViewTrigger index={index} onInView={handleInView} />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Mobile view */}
+      <div className="md:hidden flex flex-col space-y-8 items-center">
+        {sections.map((section) => (
+          <div
+            key={section.id}
+            className="flex flex-col items-center text-center p-8 rounded-lg shadow-md mx-4 my-6"
+            style={{ backgroundColor: section.backgroundColor }}
+          >
+            <img
+              src={section.image}
+              alt={`Section ${section.id}`}
+              className="w-64 h-48 rounded-lg object-cover mb-4"
+            />
+            <div>{section.content}</div>
+          </div>
+        ))}
+      </div>
+
+      <style>{`
+        .scrollable-container {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          overflow-y: scroll;
+        }
+
+        /* Hide scrollbar in WebKit browsers */
+        .scrollable-container::-webkit-scrollbar {
+          width: 0;
+          height: 0;
+        }
+
+        /* Hide scrollbar in Firefox */
+        .scrollable-container {
+          scrollbar-width: none;
+        }
+      `}</style>
     </div>
   );
 };
 
-export default ScrollSections;
+type InViewTriggerProps = {
+  index: number;
+  onInView: (index: number, inView: boolean) => void;
+};
+
+const InViewTrigger: React.FC<InViewTriggerProps> = ({ index, onInView }) => {
+  const { ref, inView } = useInView({
+    threshold: 0.5, // Trigger when 50% of the element is in view
+    triggerOnce: false,
+  });
+
+  React.useEffect(() => {
+    onInView(index, inView);
+  }, [inView, index, onInView]);
+
+  return <div ref={ref} className="h-full w-full"></div>;
+};
+
+export default ScrollOverlappingSections;
