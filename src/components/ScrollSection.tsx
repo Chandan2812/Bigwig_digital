@@ -45,7 +45,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ section, isReversed }
         <img
           src={section.image}
           alt={`Section ${section.id}`}
-          className="rounded-lg shadow-lg w-full h-[60vh]"
+          className="rounded-lg shadow-lg w-full h-[25vh] md:h-[60vh]"
         />
       </motion.div>
     </motion.div>
