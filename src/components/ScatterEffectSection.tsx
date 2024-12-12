@@ -81,9 +81,6 @@ const SunflowerEffect: React.FC = () => {
           </span>{" "}
           clients
         </h1>
-        <button className="mt-6 px-4 py-2 text-sm lg:px-6 lg:py-3 lg:text-base text-white bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-purple-600 hover:to-indigo-500 rounded-full shadow-lg">
-          Sign up for a demo
-        </button>
       </div>
     </div>
   );
