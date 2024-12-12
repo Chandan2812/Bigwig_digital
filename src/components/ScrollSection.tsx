@@ -67,10 +67,7 @@ const ScrollSections: React.FC = () => {
             Ads
           </div>
           <p className="mt-4 text-lg leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-            vitae erat.
+          We create dynamic social media strategies that build your brand, engage your audience, and boost conversions. From content creation to ad campaigns, we handle it all so you can shine across platforms like Facebook, Instagram, LinkedIn, and more.
           </p>
         </>
       ),
@@ -81,16 +78,18 @@ const ScrollSections: React.FC = () => {
       backgroundColor: "bg-blue-300",
       content: (
         <>
-          <h1 className="text-4xl font-bold">Marketing Strategy</h1>
-          <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
-            Strategy
-          </div>
-          <p className="mt-4 text-lg leading-relaxed">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo.
-          </p>
+         <h1 className="text-4xl font-bold">Marketing Strategy</h1>
+        <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
+          Tailored Solutions
+        </div>
+        <p className="mt-4 text-lg leading-relaxed">
+          Success starts with a plan! Our team crafts data-driven marketing strategies
+          tailored to your business goals. We analyze your market, identify opportunities, 
+          and create a roadmap to boost your brand's visibility and profitability. With 
+          multichannel campaign planning and performance tracking, we ensure every step is 
+          optimized for growth.
+        </p>
+
         </>
       ),
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0c91de4d89a6bc9f7400e_features-2-p-800.webp",
@@ -102,12 +101,15 @@ const ScrollSections: React.FC = () => {
         <>
           <h1 className="text-4xl font-bold">Creative Designs</h1>
           <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
-            Design
+            Stunning Visuals
           </div>
           <p className="mt-4 text-lg leading-relaxed">
-            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+            First impressions matter, and our designs ensure they’re unforgettable. From 
+            eye-catching logos and branding to social media graphics and UI/UX designs, 
+            we create visually compelling materials that captivate your audience and leave 
+            a lasting impact. Let your brand's identity shine with our creative expertise.
           </p>
+
         </>
       ),
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",

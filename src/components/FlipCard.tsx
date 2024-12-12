@@ -4,31 +4,32 @@ const FlipCard = () => {
   const cards = [
     {
       id: 1,
-      title: "Developing data-driven campaigns across platforms",
+      title: "Crafting Insight-Driven Campaigns Across Platforms",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.",
+        "Harness the power of data to create impactful marketing campaigns tailored to your audience. By analyzing key metrics and consumer behavior, we design and implement strategies that perform across social media, search engines, and other digital platforms. Each campaign is optimized for engagement, conversions, and measurable success",
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc089c1f9a68e096be4e6_pexels-laura-villela-brasil-438615876-27308773-p-500.webp", // Replace with your image URL
       bgColor: "bg-yellow-200",
     },
     {
       id: 2,
       title:
-        "Producing high-quality content that aligns with SEO best practices",
+        "Creating High-Quality, SEO-Optimized Content",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.",
+        "Our team produces engaging, high-quality content tailored to your audience while adhering to the latest SEO best practices. From keyword-rich blog posts to compelling website copy, we ensure your content drives traffic, boosts rankings, and resonates with your target market.",
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc172720632effb1eb63c_pexels-buro-millennial-636760-1438081-p-500.webp", // Replace with your image URL
       bgColor: "bg-blue-200",
     },
     {
       id: 3,
       title:
-        "Managing and optimizing social media channels to build engagement",
+        "Driving Engagement Through Social Media Management",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.",
+        "We expertly manage and optimize your social media channels to build meaningful connections and foster audience engagement. From crafting compelling posts to analyzing performance metrics, our strategies ensure your brand stays active, relevant, and impactful across platforms.",
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc22f20352e7c549a58f9_pexels-tim-samuel-6697318-p-500.webp", // Replace with your image URL
       bgColor: "bg-purple-200",
     },
   ];
+
 
   const [flippedStates, setFlippedStates] = useState<boolean[]>(
     Array(cards.length).fill(false)
@@ -121,7 +122,7 @@ const FlipCard = () => {
               </div>
 
               {/* Description */}
-              <p className="text-start text-md md:text-xl mb-4">
+              <p className="text-start text-md md:text-lg">
                 {card.description}
               </p>
 
