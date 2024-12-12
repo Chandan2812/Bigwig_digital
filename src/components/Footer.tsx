@@ -107,11 +107,11 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="mx-auto max-w-7xl mt-8 flex flex-col md:flex-row text-center justify-between items-center text-md text-gray-700">
-          <p className="mb-4 md:mb-0">
+        <div className="mx-auto w-11/12 mt-8 flex flex-col md:flex-row text-center justify-between items-center text-md text-gray-700">
+          <p className="mb-4 md:mb-0 ">
           © 2024 Bigwigmedia.ae. All rights reserved.
           </p>
-          <div className="flex space-x-5">
+          <div className="flex space-x-5 ">
             <a href="#" className="hover:underline">
               Style Guide
             </a>
