@@ -27,7 +27,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ section, isReversed }
       transition={{ duration: 0.8, ease: "easeOut" }}
       className={`flex flex-col md:flex-row gap-9 w-11/12 mx-auto mb-20 rounded-xl h-fit ${
         isReversed ? "md:flex-row-reverse" : ""
-      } items-center py-8 px-8 md:px-16 ${section.backgroundColor}`}
+      } items-center py-8 px-8 md:px-10 ${section.backgroundColor}`}
     >
       <motion.div
         initial={{ opacity: 0, x: isReversed ? 50 : -50 }}
