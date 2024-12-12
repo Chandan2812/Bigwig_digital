@@ -31,7 +31,7 @@ const FlipCard = () => {
       title: "Leveraging Advanced Analytics for Performance Tracking",
       description:
         "Stay ahead with actionable insights derived from advanced analytics tools. We monitor campaign performance, audience behavior, and website metrics to ensure your strategies are always optimized for the best results.",
-        image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc22f20352e7c549a58f9_pexels-tim-samuel-6697318-p-500.webp", // Replace with your image URL
+        image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66e1de15588d4888d2ece3a7_solutions-header-2-p-500.webp", // Replace with your image URL
         bgColor: "bg-green-200",
     },
     {
@@ -39,7 +39,7 @@ const FlipCard = () => {
       title: "Boosting Brand Visibility with PPC Campaigns",
       description:
         "Our Pay-Per-Click advertising strategies deliver measurable results and ROI. By targeting the right audience with compelling ads, we drive traffic and generate leads for your business on platforms like Google Ads and social media.",
-        image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc22f20352e7c549a58f9_pexels-tim-samuel-6697318-p-500.webp", // Replace with your image URL
+        image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66e1de26c6bc75951fab4a7f_solutions-header-3-p-500.webp", // Replace with your image URL
         bgColor: "bg-pink-200",
     },
     {
@@ -47,7 +47,7 @@ const FlipCard = () => {
       title: "Enhancing Customer Loyalty Through Email Marketing",
       description:
         "Build meaningful relationships with your audience using targeted and personalized email campaigns. From newsletters to promotional offers, our email marketing strategies nurture leads and enhance customer retention.",
-        image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc22f20352e7c549a58f9_pexels-tim-samuel-6697318-p-500.webp", // Replace with your image URL
+        image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66e1de0640b5270c55d1bf6f_solutions-header-1-p-500.webp", // Replace with your image URL
         bgColor: "bg-teal-200",
     },
   ];
