@@ -8,6 +8,8 @@ import ImageSlider from '../components/ImageSlider'
 import ScrollOverlappingText from '../components/RotatingText'
 import ScrollOverlappingSections from '../components/ScrollSection'
 import SunflowerEffect from '../components/ScatterEffectSection'
+import AboutUs from '../components/About'
+import FAQ from '../components/Faq'
 
 function Landing() {
   return (
@@ -20,6 +22,8 @@ function Landing() {
     <ScrollOverlappingSections/>
     <CaseCard/>
     <SunflowerEffect/>
+    <AboutUs/>
+    <FAQ/>
     <Footer/>
     </>
   )

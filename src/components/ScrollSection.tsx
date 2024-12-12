@@ -21,6 +21,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ section, isReversed }
 
   return (
     <motion.div
+      id="features"
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
