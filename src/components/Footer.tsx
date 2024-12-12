@@ -108,8 +108,8 @@ const Footer: React.FC = () => {
 
         {/* Footer Bottom */}
         <div className="mx-auto max-w-7xl mt-8 flex flex-col md:flex-row text-center justify-between items-center text-md text-gray-700">
-          <p className="mb-4 md:mb-0 px-10">
-            © Engage Template — Powered by Webflow | Created by template.supply
+          <p className="mb-4 md:mb-0">
+          © 2024 Bigwigmedia.ae. All rights reserved.
           </p>
           <div className="flex space-x-5">
             <a href="#" className="hover:underline">

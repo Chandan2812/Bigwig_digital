@@ -10,8 +10,32 @@ import ScrollOverlappingSections from '../components/ScrollSection'
 import SunflowerEffect from '../components/ScatterEffectSection'
 import AboutUs from '../components/About'
 import FAQ from '../components/Faq'
+import { useEffect, useState } from 'react'
 
 function Landing() {
+  const [isVisible, setIsVisible] = useState(false);
+    
+  // Handle scroll to top button visibility
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
     <Nav/>
@@ -25,6 +49,14 @@ function Landing() {
     <AboutUs/>
     <FAQ/>
     <Footer/>
+    {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="z-50 fixed bottom-10 right-10 bg-black text-white w-12 h-12 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-110 flex items-center justify-center"
+        >
+          ↑
+        </button>
+      )}
     </>
   )
 }
