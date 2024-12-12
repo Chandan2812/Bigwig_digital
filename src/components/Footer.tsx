@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faXTwitter, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
 const Footer: React.FC = () => {
@@ -12,12 +12,12 @@ const Footer: React.FC = () => {
         {/* Top Section */}
         <div className="flex flex-col md:flex-row md:justify-between mb-28">
           {/* Left Section */}
-          <h1 className=" md:w-2/3 text-3xl md:text-6xl text-left md:text-left mb-6 md:mb-0">
-            Never miss an opportunity again 👉
+          <h1 className=" md:w-2/3 text-3xl md:text-2xl text-left md:text-left mb-6 md:mb-0">
+            BigwigMedia.ae
           </h1>
 
           {/* Right Section - Newsletter */}
-          <div className="md:w-1/3 flex flex-col sm:px-8 items-start">
+          {/* <div className="md:w-1/3 flex flex-col sm:px-8 items-start">
             <label
               htmlFor="email"
               className="text-xl mb-2 text-gray-300"
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
                 Submit
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         
@@ -89,17 +89,17 @@ const Footer: React.FC = () => {
       <h4 className="text-lg font-semibold mb-4">Social</h4>
       <div className="sm:w-full flex justify-start space-x-5 md:space-x-4 border-3 border-red-600 z-50">
         {/* Social Icons */}
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-2xl cursor-pointer">
+        <a href="https://www.facebook.com/bigwigmedia.in/" target="_blank" rel="noopener noreferrer" className="text-2xl cursor-pointer">
           <FontAwesomeIcon icon={faFacebookF} />
         </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-2xl cursor-pointer">
+        <a href="https://www.instagram.com/bigwigmedia/" target="_blank" rel="noopener noreferrer" className="text-2xl cursor-pointer">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-2xl cursor-pointer">
-          <FontAwesomeIcon icon={faLinkedinIn} />
+        <a href="https://www.youtube.com/channel/UCA0GIfKW7ORxUT6_mMnEEzQ" target="_blank" rel="noopener noreferrer" className="text-2xl cursor-pointer">
+          <FontAwesomeIcon icon={faYoutube} />
         </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-2xl cursor-pointer">
-          <FontAwesomeIcon icon={faTwitter} />
+        <a href="https://x.com/bigwig_media" target="_blank" rel="noopener noreferrer" className="text-2xl cursor-pointer">
+          <FontAwesomeIcon icon={faXTwitter} />
         </a>
       </div>
     </div>
