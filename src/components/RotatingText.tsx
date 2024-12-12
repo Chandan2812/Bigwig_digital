@@ -12,7 +12,7 @@ const ScrollOverlappingText: React.FC = () => {
   };
 
     // Light colors
-    const colors = ["#D1E7FF", "#f2c7dd", "#f5b87f", "#f0ce73"];
+    const colors = ["#D1E7FF", "#E9D5FD", "#A7F3D0", "#FEF08A"];
     // Different rotation values for tilt effect
     const rotations = ["-5deg", "5deg", "3deg", "-3deg"];
 

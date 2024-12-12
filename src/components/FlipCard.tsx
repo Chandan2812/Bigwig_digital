@@ -6,14 +6,13 @@ const FlipCard = () => {
       id: 1,
       title: "Crafting Insight-Driven Campaigns Across Platforms",
       description:
-        "Harness the power of data to create impactful marketing campaigns tailored to your audience. By analyzing key metrics and consumer behavior, we design and implement strategies that perform across social media, search engines, and other digital platforms. Each campaign is optimized for engagement, conversions, and measurable success",
+        "Harness the power of data to create impactful marketing campaigns tailored to your audience. By analyzing key metrics and consumer behavior, we design and implement strategies that perform across social media, search engines, and other digital platforms. Each campaign is optimized for engagement, conversions, and measurable success.",
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc089c1f9a68e096be4e6_pexels-laura-villela-brasil-438615876-27308773-p-500.webp", // Replace with your image URL
       bgColor: "bg-yellow-200",
     },
     {
       id: 2,
-      title:
-        "Creating High-Quality, SEO-Optimized Content",
+      title: "Creating High-Quality, SEO-Optimized Content",
       description:
         "Our team produces engaging, high-quality content tailored to your audience while adhering to the latest SEO best practices. From keyword-rich blog posts to compelling website copy, we ensure your content drives traffic, boosts rankings, and resonates with your target market.",
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc172720632effb1eb63c_pexels-buro-millennial-636760-1438081-p-500.webp", // Replace with your image URL
@@ -21,14 +20,38 @@ const FlipCard = () => {
     },
     {
       id: 3,
-      title:
-        "Driving Engagement Through Social Media Management",
+      title: "Driving Engagement Through Social Media Management",
       description:
         "We expertly manage and optimize your social media channels to build meaningful connections and foster audience engagement. From crafting compelling posts to analyzing performance metrics, our strategies ensure your brand stays active, relevant, and impactful across platforms.",
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc22f20352e7c549a58f9_pexels-tim-samuel-6697318-p-500.webp", // Replace with your image URL
       bgColor: "bg-purple-200",
     },
+    {
+      id: 4,
+      title: "Leveraging Advanced Analytics for Performance Tracking",
+      description:
+        "Stay ahead with actionable insights derived from advanced analytics tools. We monitor campaign performance, audience behavior, and website metrics to ensure your strategies are always optimized for the best results.",
+        image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc22f20352e7c549a58f9_pexels-tim-samuel-6697318-p-500.webp", // Replace with your image URL
+        bgColor: "bg-green-200",
+    },
+    {
+      id: 5,
+      title: "Boosting Brand Visibility with PPC Campaigns",
+      description:
+        "Our Pay-Per-Click advertising strategies deliver measurable results and ROI. By targeting the right audience with compelling ads, we drive traffic and generate leads for your business on platforms like Google Ads and social media.",
+        image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc22f20352e7c549a58f9_pexels-tim-samuel-6697318-p-500.webp", // Replace with your image URL
+        bgColor: "bg-pink-200",
+    },
+    {
+      id: 6,
+      title: "Enhancing Customer Loyalty Through Email Marketing",
+      description:
+        "Build meaningful relationships with your audience using targeted and personalized email campaigns. From newsletters to promotional offers, our email marketing strategies nurture leads and enhance customer retention.",
+        image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc22f20352e7c549a58f9_pexels-tim-samuel-6697318-p-500.webp", // Replace with your image URL
+        bgColor: "bg-teal-200",
+    },
   ];
+  
 
 
   const [flippedStates, setFlippedStates] = useState<boolean[]>(
@@ -42,15 +65,15 @@ const FlipCard = () => {
   };
 
   return (
-    <div id="solutions" className="flex flex-wrap justify-center gap-6 pt-14 pb-10 md:pb-28 w-11/12 md:w-full mx-auto mt-10 mb-20 sm:flex-col md:flex-row">
+    <div id="solutions" className="grid grid-cols-1 md:grid-cols-3 gap-6 w-11/12 mx-auto mt-10 mb-10 md:mb-20">
       {cards.map((card, index) => (
         <div
           key={card.id}
-          className="group w-full sm:w-full md:w-96 h-[400px] perspective" // Make the width 100% on mobile and 96 on desktop
+          className="group w-full sm:w-full md:w-96 h-[400px] md:h-[500px] perspective" // Make the width 100% on mobile and 96 on desktop
         >
           {/* Flip Container */}
           <div
-            className={`relative w-full h-full rounded-lg shadow-lg transform-style-preserve-3d transition-transform duration-500 ${
+            className={`relative w-full h-full rounded-lg transform-style-preserve-3d transition-transform duration-500 ${
               flippedStates[index] ? "rotate-y-180" : ""
             }`}
           >
@@ -122,7 +145,7 @@ const FlipCard = () => {
               </div>
 
               {/* Description */}
-              <p className="text-start text-md md:text-lg">
+              <p className="text-justify text-md md:text-lg">
                 {card.description}
               </p>
 
