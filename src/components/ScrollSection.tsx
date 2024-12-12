@@ -59,7 +59,7 @@ const ScrollSections: React.FC = () => {
   const sections: Section[] = [
     {
       id: 1,
-      backgroundColor: "bg-purple-300",
+      backgroundColor: "bg-yellow-200",
       content: (
         <>
           <h1 className="text-4xl font-bold">Social Media Campaign</h1>
@@ -75,7 +75,7 @@ const ScrollSections: React.FC = () => {
     },
     {
       id: 2,
-      backgroundColor: "bg-blue-300",
+      backgroundColor: "bg-blue-200",
       content: (
         <>
          <h1 className="text-4xl font-bold">Marketing Strategy</h1>
@@ -96,7 +96,7 @@ const ScrollSections: React.FC = () => {
     },
     {
       id: 3,
-      backgroundColor: "bg-green-300",
+      backgroundColor: "bg-purple-200",
       content: (
         <>
           <h1 className="text-4xl font-bold">Creative Designs</h1>
