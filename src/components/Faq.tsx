@@ -3,46 +3,47 @@ import { useState } from "react";
 function FAQ() {
   const faqs = [
     {
-      question: "What is Unify?",
+      question: "What services do you offer?",
       answer:
-        "Unify is a comprehensive platform designed to streamline and centralize admissions processes for higher education institutions.",
+        "We offer a wide range of digital marketing services including SEO, content marketing, social media management, PPC advertising, and website optimization.",
     },
     {
-      question: "How does Unify improve the admissions process?",
+      question: "How can digital marketing help my business?",
       answer:
-        "Unify automates application processing, centralizes inquiries, and provides customizable post-application workflows to make admissions seamless.",
+        "Digital marketing helps increase your online visibility, drive targeted traffic to your website, and build lasting customer relationships through data-driven strategies.",
     },
     {
-      question: "Is Unify suitable for all types of educational institutions?",
+      question: "Do you create custom strategies for each business?",
       answer:
-        "Yes, Unify is flexible and can be tailored to the specific needs of universities, colleges, and other higher education organizations.",
+        "Yes, we tailor our strategies to fit the unique needs and goals of each client, ensuring maximum impact and return on investment.",
     },
     {
-      question: "Can Unify integrate with existing systems?",
+      question: "Can you help improve my website's SEO?",
       answer:
-        "Absolutely! Unify supports integration with various existing systems to ensure a smooth transition and workflow.",
+        "Absolutely! Our team specializes in optimizing website structure, content, and keywords to boost your rankings on search engines and drive organic traffic.",
     },
     {
-      question: "What kind of support does Unify offer?",
+      question: "Do you offer social media management services?",
       answer:
-        "We offer 24/7 customer support, onboarding assistance, and detailed documentation to help you get the most out of Unify.",
+        "Yes, we manage and optimize social media accounts to increase engagement, grow your audience, and drive traffic through organic and paid strategies.",
     },
     {
-      question: "Is training provided for using Unify?",
+      question: "What is the process for starting a project with your agency?",
       answer:
-        "Yes, we provide comprehensive training sessions to ensure your team is comfortable and efficient with the platform.",
+        "Getting started is easy! Reach out to us for a consultation, and we’ll work with you to develop a custom digital marketing plan tailored to your business needs.",
     },
     {
-      question: "Does Unify offer analytics features?",
+      question: "How do you measure the success of your campaigns?",
       answer:
-        "Yes, Unify provides in-depth analytics to track admissions metrics, monitor progress, and make data-driven decisions.",
+        "We track key performance indicators (KPIs) like website traffic, conversion rates, engagement, and ROI to measure and optimize the success of our campaigns.",
     },
     {
-      question: "How do I get started with Unify?",
+      question: "Do you provide analytics and reporting?",
       answer:
-        "Getting started is simple. Schedule a demo with us, and we’ll guide you through the onboarding process step by step.",
+        "Yes, we provide detailed analytics and regular reports to track the progress of your campaigns and ensure you are always informed of the results.",
     },
   ];
+  
 
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -51,7 +52,7 @@ function FAQ() {
   };
 
   return (
-    <div id="faq" className="w-full mx-auto px-16 py-6 bg-blue-50 ">
+    <div id="faq" className="w-full mx-auto px-16 py-6 ">
       <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">
         Frequently Asked Questions
       </h2>

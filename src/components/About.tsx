@@ -1,7 +1,7 @@
 import about from "../assets/about-us.webp"
 const AboutUs = () => {
   return (
-    <section id="about" className="bg-gray-100 py-16 px-8 md:px-14 lg:px-20">
+    <section id="about" className=" py-16 px-8 md:px-14 lg:px-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Text Content */}
         <div>
@@ -9,17 +9,11 @@ const AboutUs = () => {
             About Us
           </h2>
           <p className="text-lg text-gray-600 mt-4">
-          We embarked on a journey fueled by a simple question, “Why does the admission process have to be so difficult for parents, students, and education organizations?” And that gave birth to the first-in-industry application automation platform for education organizations, with NoPaperForms becoming our identity.
+          At BigwigMedia, we are passionate about helping businesses grow and succeed in the digital world. With years of expertise in digital marketing, we specialize in providing data-driven strategies that deliver measurable results. Our team of experts in SEO, social media marketing, content creation, and paid advertising works collaboratively to craft tailored solutions for every client.
           </p>
           <p className="text-lg text-gray-600 mt-4">
-          We kept scaling the depth and breadth of our product, and our solutions expanded within the education industry, from EdTech Companies, Coaching & Training Institutes, Study Abroad Consultants, K12 Schools, Play & Pre-Schools to Higher Education Institutions.
+          We understand that every business is unique, which is why we take the time to deeply understand your goals, target audience, and industry to develop custom strategies that ensure your brand stands out. From improving search engine rankings to creating compelling content and optimizing social media engagement, we offer a comprehensive suite of services to drive your online success.
           </p>
-          <a
-            href="#contact"
-            className="inline-block mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700"
-          >
-            Contact Us
-          </a>
         </div>
 
         {/* Image */}

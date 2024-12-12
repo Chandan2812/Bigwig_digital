@@ -114,6 +114,24 @@ const ScrollSections: React.FC = () => {
       ),
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
     },
+    {
+      id: 4,
+      backgroundColor: "bg-green-200",
+      content: (
+        <>
+          <h1 className="text-4xl font-bold">SEO</h1>
+<div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
+  Search Engine Optimization
+</div>
+<p className="mt-4 text-lg leading-relaxed">
+  Elevate your online presence with our expert SEO solutions. We specialize in optimizing your website’s structure, content, and keyword strategy to boost search engine rankings. Through comprehensive on-page and off-page SEO techniques, we enhance your site’s visibility, improve user experience, and drive consistent, organic traffic growth. Our data-driven approach ensures continuous monitoring, refinement, and optimization of your SEO efforts, keeping you ahead of the competition and positioning you for long-term online success.
+</p>
+
+
+        </>
+      ),
+      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
+    },
   ];
 
   return (
