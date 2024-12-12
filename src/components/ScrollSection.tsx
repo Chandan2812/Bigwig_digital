@@ -66,7 +66,7 @@ const ScrollSections: React.FC = () => {
           <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
             Ads
           </div>
-          <p className="mt-4 text-lg leading-relaxed">
+          <p className="mt-4 text-lg leading-relaxed text-justify">
           We create dynamic social media strategies that build your brand, engage your audience, and boost conversions. From content creation to ad campaigns, we handle it all so you can shine across platforms like Facebook, Instagram, LinkedIn, and more.
           </p>
         </>
@@ -82,7 +82,7 @@ const ScrollSections: React.FC = () => {
         <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
           Tailored Solutions
         </div>
-        <p className="mt-4 text-lg leading-relaxed">
+        <p className="mt-4 text-lg leading-relaxed text-justify">
           Success starts with a plan! Our team crafts data-driven marketing strategies
           tailored to your business goals. We analyze your market, identify opportunities, 
           and create a roadmap to boost your brand's visibility and profitability. With 
@@ -103,7 +103,7 @@ const ScrollSections: React.FC = () => {
           <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
             Stunning Visuals
           </div>
-          <p className="mt-4 text-lg leading-relaxed">
+          <p className="mt-4 text-lg leading-relaxed text-justify">
             First impressions matter, and our designs ensure they’re unforgettable. From 
             eye-catching logos and branding to social media graphics and UI/UX designs, 
             we create visually compelling materials that captivate your audience and leave 
@@ -123,7 +123,7 @@ const ScrollSections: React.FC = () => {
 <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
   Search Engine Optimization
 </div>
-<p className="mt-4 text-lg leading-relaxed">
+<p className="mt-4 text-lg leading-relaxed text-justify">
   Elevate your online presence with our expert SEO solutions. We specialize in optimizing your website’s structure, content, and keyword strategy to boost search engine rankings. Through comprehensive on-page and off-page SEO techniques, we enhance your site’s visibility, improve user experience, and drive consistent, organic traffic growth. Our data-driven approach ensures continuous monitoring, refinement, and optimization of your SEO efforts, keeping you ahead of the competition and positioning you for long-term online success.
 </p>
 
