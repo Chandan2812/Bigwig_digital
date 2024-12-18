@@ -2,36 +2,45 @@ const CaseCard: React.FC = () => {
   const cases = [
     {
       image:
-        "https://cdn.prod.website-files.com/66bbc417df501b935e5152ee/66e2f9b0fecdd6bfd76e651e_pexels-bertellifotografia-2467506-p-500.webp",
-      title: "Driving 75% Growth",
+        "https://img.freepik.com/free-photo/people-tablet-with-bar-graph_1134-473.jpg?t=st=1734521827~exp=1734525427~hmac=a538c7ecac674ca88ab223133d3c932a78502f43944562a09b9eac8f82b860f6&w=900",
+      title: "Driving 75% Growth in E-commerce",
       description:
-        "We boosted an e-commerce brand’s conversions by 75% with targeted SEO and advertising strategies, increasing both visibility and revenue.",
-      tags: ["Organic growth", "Advertising"],
+        "We implemented a comprehensive SEO and performance marketing strategy for an e-commerce brand, boosting conversions by 75% and significantly increasing revenue.",
+      tags: ["SEO", "Performance Marketing", "E-commerce"],
     },
     {
       image:
-        "https://cdn.prod.website-files.com/66bbc417df501b935e5152ee/66e2fcfd250a89399734758e_pexels-laryssa-suaid-798122-3616984-p-500.webp",
-      title: "From Zero to Hero",
-      description: "We helped a fashion brand grow its social media engagement by creating compelling content and leveraging influencer partnerships.",
-      tags: ["Content creation", "SEO"],
+        "https://img.freepik.com/free-photo/social-media-marketing-concept-marketing-with-applications_23-2150063150.jpg?t=st=1734521679~exp=1734525279~hmac=62da27c16e954020d54a96e759573076fe3fa5f1d978970d95e0ca6db8fac276&w=900",
+      title: "Social Media Engagement Growth",
+      description:
+        "For a fashion brand, we leveraged influencer marketing and compelling content to increase social media engagement and drive brand awareness from scratch.",
+      tags: ["Social Media Management", "Influencer Marketing", "Content Creation"],
     },
     {
       image:
-        "https://cdn.prod.website-files.com/66bbc417df501b935e5152ee/66e2fce994b92a9d52ef76af_pexels-ivan-samkov-7213361-p-500.webp",
-      title: "Scaling Success",
+        "https://img.freepik.com/premium-vector/viral-content-magnetic-attraction-people-communication_24908-2.jpg?w=740",
+      title: "Scaling Lead Generation by 60%",
       description:
-        "We increased lead generation by 60% for a SaaS company through SEO, content marketing, strategic ads, and targeted campaigns.",
-      tags: ["SEO", "Advertising"],
+        "We boosted lead generation by 60% for a SaaS company by optimizing their website for SEO, running targeted ads, and delivering personalized content marketing strategies.",
+      tags: ["SEO", "Lead Generation", "Content Marketing", "SaaS"],
     },
   ];
+  
 
   // Define a mapping of tags to specific colors
   const tagColorMap: { [key: string]: string } = {
-    "Organic growth": "bg-blue-200",
-    Advertising: "bg-red-200",
-    "Content creation": "bg-green-200",
-    SEO: "bg-yellow-200",
+    "Organic growth": "bg-teal-200",
+    Advertising: "bg-red-300",
+    "Content creation": "bg-green-300",
+    SEO: "bg-yellow-300",
+    "Influencer Marketing": "bg-purple-300",
+    "Lead Generation": "bg-blue-300",
+    "Performance Marketing": "bg-pink-200",
+    "Social Media Management": "bg-orange-300",
+    "Brand Awareness": "bg-indigo-200",
+    "Creative Innovations": "bg-gray-200",
   };
+  
 
   return (
     <div className="p-8 min-h-screen w-11/12 mx-auto">
@@ -61,7 +70,7 @@ const CaseCard: React.FC = () => {
                 {caseItem.tags.map((tag, tagIndex) => (
                   <span
                     key={tagIndex}
-                    className={`text-sm md:text-lg font-medium px-5 py-2 rounded-full ${
+                    className={`text-sm md:text-md font-medium px-4 py-2 rounded-full ${
                       tagColorMap[tag] || "bg-gray-200"
                     } text-gray-700`}
                   >

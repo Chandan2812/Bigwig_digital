@@ -202,14 +202,14 @@ const ViewAllButton = styled.button`
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   color: white;
-  background-color: #2563EB;
+  background-color: #474745;
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #1D4ED8;
+    background-color: #292928;
   }
 `;
 

@@ -1,4 +1,4 @@
-import about from "../assets/about-us.webp"
+
 const AboutUs = () => {
   return (
     <section id="about" className="  py-16 px-8 md:px-14 lg:px-20">
@@ -21,7 +21,7 @@ const AboutUs = () => {
         {/* Image */}
         <div className="flex justify-center">
           <img
-            src={about} // Replace this URL with your actual image source
+            src="https://img.freepik.com/free-vector/company-employees-planning-task-brainstorming_74855-6316.jpg?t=st=1734522063~exp=1734525663~hmac=0173b10e7d1b47300e9882cbd216299d458cb3b4601fad857cef4df878b0abd6&w=996" // Replace this URL with your actual image source
             alt="About Us"
             className="w-full max-w-sm md:max-w-md rounded-lg"
           />
