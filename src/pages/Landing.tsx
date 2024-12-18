@@ -5,11 +5,11 @@ import CaseCard from '../components/CaseCard'
 import Hero from '../components/Hero'
 import FlipCard from '../components/FlipCard'
 import ScrollOverlappingSections from '../components/ScrollSection'
-import SunflowerEffect from '../components/ScatterEffectSection'
 import AboutUs from '../components/About'
 import FAQ from '../components/Faq'
 import { useEffect, useState } from 'react'
 import Blog from '../components/Blog'
+import ImageSlider from '../components/ImageSlider'
 
 function Landing() {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,14 +39,12 @@ function Landing() {
     <>
     <Nav/>
     <Hero/>
-    {/* <ImageSlider/> */}
-    {/* <ScrollOverlappingText/> */}
     <FlipCard/>
     <ScrollOverlappingSections/>
     <CaseCard/>
     <Blog/>
-    <SunflowerEffect/>
     <AboutUs/>
+    <ImageSlider/>
     <FAQ/>
     <Footer/>
     {isVisible && (
