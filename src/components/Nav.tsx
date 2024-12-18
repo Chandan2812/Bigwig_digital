@@ -79,6 +79,12 @@ const Nav: React.FC = () => {
               <span className="absolute inset-0 bg-gray-200 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out"></span>
             </button>
           </li>
+          <li>
+            <button className="relative overflow-hidden group rounded-lg px-3 py-2" onClick={() => handleScroll("blog")}>
+              <span className="relative z-10">Blogs</span>
+              <span className="absolute inset-0 bg-gray-200 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out"></span>
+            </button>
+          </li>
         </ul>
 
 

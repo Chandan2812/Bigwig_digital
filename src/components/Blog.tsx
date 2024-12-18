@@ -55,7 +55,7 @@ const Blog = () => {
   }
 
   return (
-    <Container>
+    <Container id='blog'>
       <BlogTitle>Our Trending Blogs</BlogTitle>
       <Description>
         Boost content creation, save time, and enhance productivity.
