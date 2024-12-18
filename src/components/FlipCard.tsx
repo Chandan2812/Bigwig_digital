@@ -4,53 +4,60 @@ const FlipCard = () => {
   const cards = [
     {
       id: 1,
-      title: "Crafting Insight-Driven Campaigns Across Platforms",
+      solution: "Social Media Management",
+      title: "Finding the Perfect Balance Between Your Brand's Purpose and Social Media Presence",
       description:
-        "Harness the power of data to create impactful marketing campaigns tailored to your audience. By analyzing key metrics and consumer behavior, we design and implement strategies that perform across social media, search engines, and other digital platforms. Each campaign is optimized for engagement, conversions, and measurable success.",
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc089c1f9a68e096be4e6_pexels-laura-villela-brasil-438615876-27308773-p-500.webp", // Replace with your image URL
+        "Social media is the heartbeat of today’s digital world, and the way your brand shows up there can make or break its success. We’ll help you craft smart, effective strategies to stand out, connect with your audience, and drive meaningful engagement—all backed by research and trend insights.",
+      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc089c1f9a68e096be4e6_pexels-laura-villela-brasil-438615876-27308773-p-500.webp",
       bgColor: "bg-yellow-200",
     },
     {
       id: 2,
-      title: "Creating High-Quality, SEO-Optimized Content",
+      solution: "Search Engine Optimization",
+      title: "Boosting Your Online Visibility to Help Your Brand Shine",
       description:
-        "Our team produces engaging, high-quality content tailored to your audience while adhering to the latest SEO best practices. From keyword-rich blog posts to compelling website copy, we ensure your content drives traffic, boosts rankings, and resonates with your target market.",
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc172720632effb1eb63c_pexels-buro-millennial-636760-1438081-p-500.webp", // Replace with your image URL
+        "Want more people to find you online? Our SEO experts can create a tailored strategy to help your business climb the search rankings, attract organic traffic, and turn visitors into loyal customers. From research to execution, we’ll make your online presence work harder for you.",
+      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc172720632effb1eb63c_pexels-buro-millennial-636760-1438081-p-500.webp",
       bgColor: "bg-blue-200",
     },
     {
       id: 3,
-      title: "Driving Engagement Through Social Media Management",
+      solution: "Performance Marketing",
+      title: "Marketing Strategies That Help You Stay Ahead of the Competition",
       description:
-        "We expertly manage and optimize your social media channels to build meaningful connections and foster audience engagement. From crafting compelling posts to analyzing performance metrics, our strategies ensure your brand stays active, relevant, and impactful across platforms.",
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc22f20352e7c549a58f9_pexels-tim-samuel-6697318-p-500.webp", // Replace with your image URL
+        "In today’s fast-moving market, you need a plan that’s as focused as your goals. With our data-driven approach, we’ll help you craft the right mix of platforms and campaigns to connect with your audience, maximize conversions, and keep your brand in the spotlight.",
+      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc22f20352e7c549a58f9_pexels-tim-samuel-6697318-p-500.webp",
       bgColor: "bg-purple-200",
     },
     {
       id: 4,
-      title: "Leveraging Advanced Analytics for Performance Tracking",
+      solution: "Online Reputation Management",
+      title: "Building and Protecting Your Brand’s Online Reputation",
       description:
-        "Stay ahead with actionable insights derived from advanced analytics tools. We monitor campaign performance, audience behavior, and website metrics to ensure your strategies are always optimized for the best results.",
-        image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66e1de15588d4888d2ece3a7_solutions-header-2-p-500.webp", // Replace with your image URL
-        bgColor: "bg-green-200",
+        "A good reputation is priceless, especially online. With our expertise in online reputation management, we’ll help you stay ahead of challenges, enhance your brand image, and create a digital presence that people trust and admire.",
+      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66e1de15588d4888d2ece3a7_solutions-header-2-p-500.webp",
+      bgColor: "bg-green-200",
     },
     {
       id: 5,
-      title: "Boosting Brand Visibility with PPC Campaigns",
+      solution: "Branded Content",
+      title: "Creating Content That Speaks Your Brand’s Language",
       description:
-        "Our Pay-Per-Click advertising strategies deliver measurable results and ROI. By targeting the right audience with compelling ads, we drive traffic and generate leads for your business on platforms like Google Ads and social media.",
-        image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66e1de26c6bc75951fab4a7f_solutions-header-3-p-500.webp", // Replace with your image URL
-        bgColor: "bg-pink-200",
+        "Whether you’re looking to grow awareness, drive traffic, or boost sales, branded content is your secret weapon. Our creative team will help you craft a content strategy that resonates with your audience and delivers real results—all while staying true to your brand’s voice.",
+      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66e1de26c6bc75951fab4a7f_solutions-header-3-p-500.webp",
+      bgColor: "bg-pink-200",
     },
     {
       id: 6,
-      title: "Enhancing Customer Loyalty Through Email Marketing",
+      solution: "Creative Innovations",
+      title: "Bringing Bold Ideas to Life Through Creative Storytelling",
       description:
-        "Build meaningful relationships with your audience using targeted and personalized email campaigns. From newsletters to promotional offers, our email marketing strategies nurture leads and enhance customer retention.",
-        image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66e1de0640b5270c55d1bf6f_solutions-header-1-p-500.webp", // Replace with your image URL
-        bgColor: "bg-teal-200",
+        "Your brand has a story, and we’re here to help you tell it in the most imaginative way possible. Using data-driven insights and out-of-the-box thinking, we’ll create fresh, interactive experiences that captivate your audience and elevate your brand’s presence.",
+      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66e1de0640b5270c55d1bf6f_solutions-header-1-p-500.webp",
+      bgColor: "bg-teal-200",
     },
   ];
+  
   
 
 
@@ -83,7 +90,7 @@ const FlipCard = () => {
             >
               {/* Title Badge */}
               <div className="border-2 border-black absolute top-8 left-6 bg-white px-6 py-3 rounded-full text-sm font-semibold">
-                Solution
+              {card.solution}
               </div>
               <div className="absolute top-8 right-6 rounded-full text-sm font-semibold">
                 <img
