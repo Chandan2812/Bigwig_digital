@@ -123,7 +123,7 @@ const ScrollSections: React.FC = () => {
     },
     {
       id: 5,
-      backgroundColor: "bg-green-200",
+      backgroundColor: "bg-red-200",
       content: (
         <>
           <h1 className="text-4xl font-bold">IEC - Information Education Communication</h1>
@@ -139,7 +139,7 @@ const ScrollSections: React.FC = () => {
     },
     {
       id: 6,
-      backgroundColor: "bg-green-200",
+      backgroundColor: "bg-cyan-200",
       content: (
         <>
           <h1 className="text-4xl font-bold">Live Coverage</h1>
@@ -155,7 +155,7 @@ const ScrollSections: React.FC = () => {
     },
     {
       id: 7,
-      backgroundColor: "bg-green-200",
+      backgroundColor: "bg-gray-200",
       content: (
         <>
           <h1 className="text-4xl font-bold">Video Shoots</h1>
@@ -171,7 +171,7 @@ const ScrollSections: React.FC = () => {
     },
     {
       id: 8,
-      backgroundColor: "bg-green-200",
+      backgroundColor: "bg-pink-200",
       content: (
         <>
           <h1 className="text-4xl font-bold">Public Relations</h1>
