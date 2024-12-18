@@ -8,8 +8,8 @@ const FlipCard = () => {
       solution: "Social Media Management",
       title: "Finding the Perfect Balance Between Your Brand's Purpose and Social Media Presence",
       description:
-        "Social media is the heartbeat of today’s digital world, and the way your brand shows up there can make or break its success. We’ll help you craft smart, effective strategies to stand out, connect with your audience, and drive meaningful engagement—all backed by research and trend insights.",
-      image:social_management,
+        "Social media is like a party, and your brand needs to be the life of it—not the awkward one in the corner. With our strategies, you'll charm the crowd, start meaningful conversations, and leave everyone wanting more. All powered by some serious research and trend magic!",
+      image: social_management,
       bgColor: "bg-yellow-200",
     },
     {
@@ -17,7 +17,7 @@ const FlipCard = () => {
       solution: "Search Engine Optimization",
       title: "Boosting Your Online Visibility to Help Your Brand Shine",
       description:
-        "Want more people to find you online? Our SEO experts can create a tailored strategy to help your business climb the search rankings, attract organic traffic, and turn visitors into loyal customers. From research to execution, we’ll make your online presence work harder for you.",
+        "Think of us as your brand’s personal trainer, but for search engines. We’ll whip your online presence into shape, get you climbing those rankings, and have your audience saying, ‘How did we not see this sooner?’",
       image: seo,
       bgColor: "bg-blue-200",
     },
@@ -26,7 +26,7 @@ const FlipCard = () => {
       solution: "Performance Marketing",
       title: "Marketing Strategies That Help You Stay Ahead of the Competition",
       description:
-        "In today’s fast-moving market, you need a plan that’s as focused as your goals. With our data-driven approach, we’ll help you craft the right mix of platforms and campaigns to connect with your audience, maximize conversions, and keep your brand in the spotlight.",
+        "Marketing is a race, and we’re here to make sure you’re not the one tripping over your shoelaces. Our data-driven approach will keep you ahead of the pack, converting browsers into buyers faster than you can say ‘ROI.’",
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc22f20352e7c549a58f9_pexels-tim-samuel-6697318-p-500.webp",
       bgColor: "bg-purple-200",
     },
@@ -35,7 +35,7 @@ const FlipCard = () => {
       solution: "Online Reputation Management",
       title: "Building and Protecting Your Brand’s Online Reputation",
       description:
-        "A good reputation is priceless, especially online. With our expertise in online reputation management, we’ll help you stay ahead of challenges, enhance your brand image, and create a digital presence that people trust and admire.",
+        "The internet never forgets, but don’t worry—we’ve got your back. With us on your team, your brand will look so good online that even your competitors might want to leave a five-star review!",
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66e1de15588d4888d2ece3a7_solutions-header-2-p-500.webp",
       bgColor: "bg-green-200",
     },
@@ -44,7 +44,7 @@ const FlipCard = () => {
       solution: "Branded Content",
       title: "Creating Content That Speaks Your Brand’s Language",
       description:
-        "Whether you’re looking to grow awareness, drive traffic, or boost sales, branded content is your secret weapon. Our creative team will help you craft a content strategy that resonates with your audience and delivers real results—all while staying true to your brand’s voice.",
+        "Content is king, but let’s be honest—it also needs to be funny, smart, and look amazing. That’s where we come in. We’ll create content that grabs attention, keeps it, and maybe even gets a standing ovation.",
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66e1de26c6bc75951fab4a7f_solutions-header-3-p-500.webp",
       bgColor: "bg-pink-200",
     },
@@ -53,11 +53,12 @@ const FlipCard = () => {
       solution: "Creative Innovations",
       title: "Bringing Bold Ideas to Life Through Creative Storytelling",
       description:
-        "Your brand has a story, and we’re here to help you tell it in the most imaginative way possible. Using data-driven insights and out-of-the-box thinking, we’ll create fresh, interactive experiences that captivate your audience and elevate your brand’s presence.",
+        "Your brand deserves more than cookie-cutter creativity. We’ll serve up fresh, jaw-dropping ideas so good they’ll have your audience saying, ‘Wow, I didn’t see that coming!’ Let’s turn your wildest dreams into even wilder realities.",
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66e1de0640b5270c55d1bf6f_solutions-header-1-p-500.webp",
       bgColor: "bg-teal-200",
     },
   ];
+  
   
   
 
@@ -158,7 +159,7 @@ const FlipCard = () => {
               </div>
 
               {/* Description */}
-              <p className="text-justify text-md md:text-lg">
+              <p className="text-justify text-md md:text-xl">
                 {card.description}
               </p>
 

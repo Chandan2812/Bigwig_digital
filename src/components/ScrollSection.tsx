@@ -169,6 +169,22 @@ const ScrollSections: React.FC = () => {
       ),
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
     },
+    {
+      id: 8,
+      backgroundColor: "bg-pink-200",
+      content: (
+        <>
+          <h1 className="text-4xl font-bold">Affiliate Marketing</h1>
+          <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
+          Partnering Smartly to Multiply Your Reach!
+          </div>
+          <p className="mt-4 text-lg leading-relaxed text-justify">
+          Think of us as your brand’s ultimate matchmaker—pairing you up with affiliates who will shout your praises from the rooftops (or at least their websites). We’ll help you create a win-win partnership so smooth, even Cupid would be jealous. Cha-ching for everyone involved!
+          </p>
+        </>
+      ),
+      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
+    },
   ];
   
 
