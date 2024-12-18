@@ -1,85 +1,34 @@
 import React from "react";
 
 const Hero: React.FC = () => {
-  const images = [
-    "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d1e01b42c938feacfa2514_header-1.webp",
-    "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d1e00f309c532bd8417776_header-2.webp",
-    "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0c0ddfe34079809b6cf6e_header-3.webp",
-  ];
-
   return (
     <div
       id="top"
-      className="flex flex-col items-center justify-center bg-white mt-5"
+      className="flex flex-col md:flex-row items-center justify-between bg-white mt-5 mb-10 md:mb-24  px-4 md:px-16"
     >
-      {/* Header Section */}
-      <div className="text-center mb-8">
-        <h1 className="text-4xl md:text-7xl font-bold">
-          Say goodbye 👋 <br />
-          <span className="line-through text-gray-400">
-            to old marketing
-          </span>{" "}
-          <br />
-          Try BigWigMedia
+      {/* Text Section */}
+      <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+        <h1 className="text-2xl md:text-5xl font-bold">
+          Say goodbye 👋{" "}
+          <span className="line-through text-gray-400">to old marketing</span>
         </h1>
+        <h1 className="text-2xl md:text-5xl font-bold mt-2">
+          Try BigWigMedia Powered by AI
+        </h1>
+        <p className="text-gray-600 mt-4">
+          Discover a smarter way to manage your marketing campaigns with the
+          power of AI. Transform your brand and reach new heights effortlessly.
+        </p>
       </div>
 
-      {/* Rotating Cards */}
-      <div className="relative md:w-80 w-52 h-96">
-        {images.map((src, index) => (
-          <div
-            key={index}
-            className={`absolute md:w-80 w-52 h-[400px] rounded-lg transition-transform duration-500 ease-in-out
-              ${index === 0 ? "z-20" : "z-10"}
-              card-${index}`}
-          >
-            <img
-              src={src}
-              alt={`Image ${index + 1}`}
-              className="w-full h-full object-cover rounded-lg shadow-lg"
-            />
-          </div>
-        ))}
+      {/* Image Section */}
+      <div className="md:w-1/2 flex justify-center md:justify-end">
+        <img
+          src="https://cdn.adglobal360.com/uploads/solution_list/desk-1681797641.jpg"
+          alt="Marketing AI Illustration"
+          className="w-full md:w-4/5 lg:w-3/4 object-cover rounded-lg"
+        />
       </div>
-
-      {/* Animation Style */}
-      <style>
-        {`
-          @keyframes rotateCards {
-            0% {
-              transform: translateX(0%) scale(1);
-              z-index: 20;
-            }
-            33% {
-              transform: translateX(-50%) scale(0.8);
-              z-index: 10;
-            }
-            66% {
-              transform: translateX(50%) scale(0.8);
-              z-index: 10;
-            }
-            100% {
-              transform: translateX(0%) scale(1);
-              z-index: 20;
-            }
-          }
-
-          .card-0 {
-            animation: rotateCards 6s infinite ease-in-out;
-          }
-
-          .card-1 {
-            animation: rotateCards 6s infinite ease-in-out;
-            animation-delay: 2s;
-          }
-
-          .card-2 {
-            animation: rotateCards 6s infinite ease-in-out;
-            animation-delay: 4s;
-          }
-        `}
-              
-      </style>
     </div>
   );
 };
