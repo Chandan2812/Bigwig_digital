@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       {/* Text Section */}
       <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
         <h1 className="text-2xl md:text-5xl font-bold">
-          Say goodbye 👋{" "}
+          Say goodbye 👋{" "} <br />
           <span className="line-through text-gray-400">to old marketing</span>
         </h1>
         <h1 className="text-2xl md:text-5xl font-bold mt-2">
