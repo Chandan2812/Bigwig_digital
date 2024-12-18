@@ -113,6 +113,9 @@ const Nav: React.FC = () => {
             <li>
               <button className="text-gray-600 hover:text-black" onClick={() => handleScroll("faq")}>FAQ</button>
             </li>
+            <li>
+              <button className="text-gray-600 hover:text-black" onClick={() => handleScroll("blog")}>Blogs</button>
+            </li>
             
           </ul>
         </div>
