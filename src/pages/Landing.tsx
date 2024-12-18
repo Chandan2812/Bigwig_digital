@@ -11,6 +11,7 @@ import SunflowerEffect from '../components/ScatterEffectSection'
 import AboutUs from '../components/About'
 import FAQ from '../components/Faq'
 import { useEffect, useState } from 'react'
+import Blog from '../components/Blog'
 
 function Landing() {
   const [isVisible, setIsVisible] = useState(false);
@@ -45,6 +46,7 @@ function Landing() {
     <FlipCard/>
     <ScrollOverlappingSections/>
     <CaseCard/>
+    <Blog/>
     <SunflowerEffect/>
     <AboutUs/>
     <FAQ/>
