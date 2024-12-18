@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState,useRef } from "react";
 
 const FlipCard = () => {
   const cards = [
     {
-      id: 1,
+      id: "solution1",
       solution: "Social Media Management",
       title: "Finding the Perfect Balance Between Your Brand's Purpose and Social Media Presence",
       description:
@@ -12,7 +12,7 @@ const FlipCard = () => {
       bgColor: "bg-yellow-200",
     },
     {
-      id: 2,
+      id: "solution2",
       solution: "Search Engine Optimization",
       title: "Boosting Your Online Visibility to Help Your Brand Shine",
       description:
@@ -21,7 +21,7 @@ const FlipCard = () => {
       bgColor: "bg-blue-200",
     },
     {
-      id: 3,
+      id: "solution3",
       solution: "Performance Marketing",
       title: "Marketing Strategies That Help You Stay Ahead of the Competition",
       description:
@@ -30,7 +30,7 @@ const FlipCard = () => {
       bgColor: "bg-purple-200",
     },
     {
-      id: 4,
+      id: "solution4",
       solution: "Online Reputation Management",
       title: "Building and Protecting Your Brand’s Online Reputation",
       description:
@@ -39,7 +39,7 @@ const FlipCard = () => {
       bgColor: "bg-green-200",
     },
     {
-      id: 5,
+      id: "solution5",
       solution: "Branded Content",
       title: "Creating Content That Speaks Your Brand’s Language",
       description:
@@ -48,7 +48,7 @@ const FlipCard = () => {
       bgColor: "bg-pink-200",
     },
     {
-      id: 6,
+      id: "solution6",
       solution: "Creative Innovations",
       title: "Bringing Bold Ideas to Life Through Creative Storytelling",
       description:
@@ -65,19 +65,24 @@ const FlipCard = () => {
     Array(cards.length).fill(false)
   );
 
+  const sectionsRef = useRef<{ [key: string]: HTMLElement | null }>({});
+
   const handleFlip = (index: number) => {
     const updatedStates = [...flippedStates];
     updatedStates[index] = !updatedStates[index];
     setFlippedStates(updatedStates);
   };
 
+
   return (
-    <div id="solutions" className="grid grid-cols-1 md:grid-cols-3 gap-6 w-11/12 mx-auto mt-10 mb-10 md:mb-20">
+    <div id="solution1" className="grid grid-cols-1 md:grid-cols-3 gap-6 w-11/12 mx-auto pt-4 mb-10 md:mb-12">
       {cards.map((card, index) => (
         <div
-          key={card.id}
-          className="group w-full sm:w-full md:w-96 h-[400px] md:h-[500px] perspective" // Make the width 100% on mobile and 96 on desktop
-        >
+        key={card.id}
+        ref={(el) => (sectionsRef.current[card.id] = el)} // Store section refs dynamically
+        id={card.id} // Assign unique id to each section
+        className="group w-full sm:w-full md:w-96 h-[400px] md:h-[500px] perspective"
+      >
           {/* Flip Container */}
           <div
             className={`relative w-full h-full rounded-lg transform-style-preserve-3d transition-transform duration-500 ${

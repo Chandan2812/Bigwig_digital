@@ -21,7 +21,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ section, isReversed }
 
   return (
     <motion.div
-      id="features"
+      id={`solution${section.id}`}
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -58,7 +58,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ section, isReversed }
 const ScrollSections: React.FC = () => {
   const sections: Section[] = [
     {
-      id: 1,
+      id: 7,
       backgroundColor: "bg-yellow-200",
       content: (
         <>
@@ -74,7 +74,7 @@ const ScrollSections: React.FC = () => {
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0c75865ce04bc4a2f6962_features-1-p-800.webp",
     },
     {
-      id: 2,
+      id: 8,
       backgroundColor: "bg-blue-200",
       content: (
         <>
@@ -90,7 +90,7 @@ const ScrollSections: React.FC = () => {
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0c91de4d89a6bc9f7400e_features-2-p-800.webp",
     },
     {
-      id: 3,
+      id: 9,
       backgroundColor: "bg-purple-200",
       content: (
         <>
@@ -106,7 +106,7 @@ const ScrollSections: React.FC = () => {
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
     },
     {
-      id: 4,
+      id: 10,
       backgroundColor: "bg-green-200",
       content: (
         <>
@@ -122,7 +122,7 @@ const ScrollSections: React.FC = () => {
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
     },
     {
-      id: 5,
+      id:11,
       backgroundColor: "bg-red-200",
       content: (
         <>
@@ -138,7 +138,7 @@ const ScrollSections: React.FC = () => {
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
     },
     {
-      id: 6,
+      id: 12,
       backgroundColor: "bg-cyan-200",
       content: (
         <>
@@ -154,7 +154,7 @@ const ScrollSections: React.FC = () => {
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
     },
     {
-      id: 7,
+      id: 13,
       backgroundColor: "bg-gray-200",
       content: (
         <>
@@ -170,7 +170,7 @@ const ScrollSections: React.FC = () => {
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
     },
     {
-      id: 8,
+      id: 14,
       backgroundColor: "bg-pink-200",
       content: (
         <>

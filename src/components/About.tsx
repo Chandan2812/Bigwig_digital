@@ -9,11 +9,13 @@ const AboutUs = () => {
             About Us
           </h2>
           <p className="text-lg text-justify text-gray-600 mt-4 md:text-lg">
-          At BigwigMedia, we are passionate about helping businesses grow and succeed in the digital world. With years of expertise in digital marketing, we specialize in providing data-driven strategies that deliver measurable results. Our team of experts in SEO, social media marketing, content creation, and paid advertising works collaboratively to craft tailored solutions for every client.
+          Ever wondered what you'd get if you crossed a digital advertising agency with Artificial Intelligence & Machine learning technology? Well, stop racking your brain cells! The answer is BIGWIG MEDIA, an AI & ML infused, pow-bam-slammingly amazing digital advertising agency that's breaking the internet!
           </p>
           <p className="text-lg text-gray-600 mt-4 text-justify">
-          We understand that every business is unique, which is why we take the time to deeply understand your goals, target audience, and industry to develop custom strategies that ensure your brand stands out. From improving search engine rankings to creating compelling content and optimizing social media engagement, we offer a comprehensive suite of services to drive your online success.
+          With AI and ML as our trusty sidekicks, we're transforming the online ad world, offering ground-breaking services that help businesses master the digital arena. Our special blend for success includes our very own AI tech, marketing prowess, dynamite creative skills, top-notch tech solutions, streamlined processes, and our Sherlock-Holmes-like understanding of analytics. We don't just partner with our clients to reach their goals. We're like the suave secret agent, always aiming to outperform and exceed expectations!
           </p>
+          <p className="text-lg text-gray-600 mt-4 text-justify">
+          At Bigwig Media, we don't just click buttons and pull levers behind the screen! We're the mad scientists, the innovators, the trailblazers at the frontier of the digital marketing universe!          </p>
         </div>
 
         {/* Image */}

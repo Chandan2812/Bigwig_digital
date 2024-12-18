@@ -8,6 +8,9 @@ const Nav: React.FC = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
+      setTimeout(() => {
+        window.scrollBy(0, -50); // Offset by 50px (adjust as needed)
+      }, 500);
     }
     setIsMobileMenuOpen(false); // Close the mobile menu
   };
@@ -70,79 +73,91 @@ const Nav: React.FC = () => {
               <div
                 onMouseEnter={() => setIsSolutionsOpen(true)}
                 onMouseLeave={() => setIsSolutionsOpen(false)}
-                className="absolute top-full left-0 bg-white shadow-lg rounded-md p-4 w-[400px] h-[300px] grid grid-cols-3 gap-6"
+                className="absolute top-full left-0 bg-white shadow-lg rounded-md px-10 w-[600px] h-[400px] grid grid-cols-4 gap-6"
               >
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solution1")}
                 >
-                  Solution 1
+                  Social Media Management
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solution2")}
                 >
-                  Solution 2
+                  Search Engine Optimization
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solution3")}
                 >
-                  Solution 3
+                  Performance Marketing
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solution4")}
                 >
-                  Solution 4
+                  Online Reputation Management
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solution5")}
                 >
-                  Solution 5
+                  Branded Content
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solution6")}
                 >
-                  Solution 6
+                  Creative Innovations
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solution7")}
                 >
-                  Solution 7
+                  Lead Management Systems
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solution8")}
                 >
-                  Solution 8
+                  Impactful Awareness Campaigns
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solution9")}
                 >
-                  Solution 9
+                  OTT Advertising
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solution9")}
                 >
-                  Solution 10
+                 Influencer Marketing
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solution9")}
                 >
-                  Solution 11
+                  IEC - Information Education Communication
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solution9")}
                 >
-                  Solution 12
+                  Live Coverage
+                </button>
+                <button
+                  className="text-gray-600 hover:text-black text-sm text-left"
+                  onClick={() => handleScroll("solution9")}
+                >
+                  Video Shoots
+                </button>
+                <button
+                  className="text-gray-600 hover:text-black text-sm text-left"
+                  onClick={() => handleScroll("solution9")}
+                >
+                  Public Relations
                 </button>
               </div>
             )}
