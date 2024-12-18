@@ -67,7 +67,7 @@ const ScrollSections: React.FC = () => {
             Streamlining Your Leads, End-to-End
           </div>
           <p className="mt-4 text-lg leading-relaxed text-justify">
-            Make every lead count with our tailored digital solutions. From awareness to conversion, we ensure a seamless journey for potential customers—leaving no room for missed opportunities.
+          Unleash your digital prowess! With our customized online wizardry, we won't just increase brand awareness but reshuffle the entire deck, ensuring every potential customer has a VIP pass to a seamless journey from discovery to purchase. And missed opportunities? Pfft…they won't stand a chance!
           </p>
         </>
       ),
@@ -80,10 +80,10 @@ const ScrollSections: React.FC = () => {
         <>
           <h1 className="text-4xl font-bold">Impactful Awareness Campaigns</h1>
           <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
-            Clear Messages, Powerful Stories
+          Provocative Campaigns That'll Make Your Awareness Meter Skyrocket
           </div>
           <p className="mt-4 text-lg leading-relaxed text-justify">
-            Let us help your brand shine with creative and impactful digital campaigns. Using the latest tech and insights, we’ll craft strategies to grab attention, spark emotion, and deliver measurable success.
+          Have a brand itching to glimmer in the vast digital universe? Well, you've hit the jackpot! We're just a bunch of creative maestros armed with integral insights and the newest technology, hell-bent on bulking up your brand with tailor-made strategies. We'll snatch attention, ignite a sentimental wildfire, and flawlessly serve up a platter of measurable success - all topped with a cherry on top!
           </p>
         </>
       ),
@@ -91,22 +91,6 @@ const ScrollSections: React.FC = () => {
     },
     {
       id: 3,
-      backgroundColor: "bg-purple-200",
-      content: (
-        <>
-          <h1 className="text-4xl font-bold">OTT Advertising</h1>
-          <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
-            Reach Your Audience, Anytime, Anywhere
-          </div>
-          <p className="mt-4 text-lg leading-relaxed text-justify">
-            With the rise of platforms like Netflix and Hotstar, OTT offers unique ways to connect with audiences. We’ll help you unlock this potential using data-driven insights and precise targeting.
-          </p>
-        </>
-      ),
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
-    },
-    {
-      id: 4,
       backgroundColor: "bg-green-200",
       content: (
         <>
@@ -115,14 +99,14 @@ const ScrollSections: React.FC = () => {
             Amplify Your Brand with Trusted Voices
           </div>
           <p className="mt-4 text-lg leading-relaxed text-justify">
-            Collaborate with the right influencers to tell your brand story. From strategy to execution, we’ll help you create campaigns that drive awareness, build trust, and deliver results.
+          Get ready to team up with the influencer elite to construct your brand's saga! From our ingenious strategy steps through to the grand final execution, we're primed to help you orchestrate campaigns that not only skyrocket brand awareness and build up trust thicker than a brick wall, but also deliver results that might just make you do a double-take!
           </p>
         </>
       ),
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
     },
     {
-      id: 5,
+      id: 4,
       backgroundColor: "bg-red-200",
       content: (
         <>
@@ -131,14 +115,14 @@ const ScrollSections: React.FC = () => {
             Spreading Knowledge, Creating Impact
           </div>
           <p className="mt-4 text-lg leading-relaxed text-justify">
-            From brochures to radio spots, we’ll help you create materials that inform and inspire. Share vital information effectively and empower your audience to make informed decisions.
+          From daredevil brochures to smooth-talking radio spots, we're the Michelangelo of your marketing materials. We’ll paint a vivid picture that not just dispenses information, but makes it as thrilling to read as a detective novel. Prepare to power up your audience with knowledge so they can leap tall decisions in a single bound
           </p>
         </>
       ),
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
     },
     {
-      id: 6,
+      id: 5,
       backgroundColor: "bg-cyan-200",
       content: (
         <>
@@ -147,14 +131,14 @@ const ScrollSections: React.FC = () => {
             Bringing Events to Life, Virtually
           </div>
           <p className="mt-4 text-lg leading-relaxed text-justify">
-            Engage your audience in real time with live coverage that makes them feel part of the moment. From events to occasions, we make virtual experiences unforgettable.
+          Ditch the FOMO, we've got you covered! Let us teleport your audience straight into the action, making every live event feel like they're on the front row! Whether it's a happening event or a casual occasion, we make the world of pixels an unforgettable experience
           </p>
         </>
       ),
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
     },
     {
-      id: 7,
+      id: 6,
       backgroundColor: "bg-gray-200",
       content: (
         <>
@@ -163,14 +147,14 @@ const ScrollSections: React.FC = () => {
             Crafting Stories, Frame by Frame
           </div>
           <p className="mt-4 text-lg leading-relaxed text-justify">
-            Whether it’s a brand story, event, or documentary, we’ll capture it beautifully. Our high-quality video services ensure your message reaches and resonates with your audience.
+          Got a brand story to tell, an event to relive, or a documentary to memorialize? We are the cinematographic alchemists you're looking for! We transform your vision into high-definition reality. And our videos? They don't just reach your audience - they have a little chit-chat, share a laugh, and make a deep connection that resonates.
           </p>
         </>
       ),
       image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
     },
     {
-      id: 8,
+      id: 7,
       backgroundColor: "bg-pink-200",
       content: (
         <>
@@ -179,7 +163,7 @@ const ScrollSections: React.FC = () => {
             Building Bridges with the Media
           </div>
           <p className="mt-4 text-lg leading-relaxed text-justify">
-            Stay in the spotlight with our media relations expertise. From local to national coverage, we’ll make sure your milestones get the attention they deserve.
+          Crave a little fame? With our savvy media relations skills, we'll transform your winners into headline news. From your cozy town newsletter to the front page of the New York Times, rest assured, your achievements won't go unnoticed. Aren't you already feeling like a celebrity?
           </p>
         </>
       ),

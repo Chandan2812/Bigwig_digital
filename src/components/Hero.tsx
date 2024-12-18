@@ -1,4 +1,5 @@
 import React from "react";
+import hero from "../assets/hero.png"
 
 const Hero: React.FC = () => {
   return (
@@ -24,9 +25,10 @@ const Hero: React.FC = () => {
       {/* Image Section */}
       <div className="md:w-1/2 flex justify-center md:justify-end">
         <img
-          src="https://cdn.adglobal360.com/uploads/solution_list/desk-1681797641.jpg"
+          // src="https://cdn.adglobal360.com/uploads/solution_list/desk-1681797641.jpg"
+          src={hero}
           alt="Marketing AI Illustration"
-          className="w-full md:w-4/5 lg:w-3/4 object-cover rounded-lg"
+          className="w-full md:w-[800px] object-cover rounded-lg"
         />
       </div>
     </div>

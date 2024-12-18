@@ -1,5 +1,6 @@
 import { useState,useRef } from "react";
-
+import social_management from "../assets/social-media-manage.jpg"
+import seo from "../assets/seo.jpg"
 const FlipCard = () => {
   const cards = [
     {
@@ -8,7 +9,7 @@ const FlipCard = () => {
       title: "Finding the Perfect Balance Between Your Brand's Purpose and Social Media Presence",
       description:
         "Social media is the heartbeat of today’s digital world, and the way your brand shows up there can make or break its success. We’ll help you craft smart, effective strategies to stand out, connect with your audience, and drive meaningful engagement—all backed by research and trend insights.",
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc089c1f9a68e096be4e6_pexels-laura-villela-brasil-438615876-27308773-p-500.webp",
+      image:social_management,
       bgColor: "bg-yellow-200",
     },
     {
@@ -17,7 +18,7 @@ const FlipCard = () => {
       title: "Boosting Your Online Visibility to Help Your Brand Shine",
       description:
         "Want more people to find you online? Our SEO experts can create a tailored strategy to help your business climb the search rankings, attract organic traffic, and turn visitors into loyal customers. From research to execution, we’ll make your online presence work harder for you.",
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc172720632effb1eb63c_pexels-buro-millennial-636760-1438081-p-500.webp",
+      image: seo,
       bgColor: "bg-blue-200",
     },
     {
