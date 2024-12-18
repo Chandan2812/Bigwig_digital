@@ -7,10 +7,9 @@ const Nav: React.FC = () => {
   const handleScroll = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
-      setTimeout(() => {
-        window.scrollBy(0, -50); // Offset by 50px (adjust as needed)
-      }, 500);
+      const offset = 70; // Adjust for sticky navbar height
+      const sectionTop = section.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: sectionTop, behavior: "smooth" });
     }
     setIsMobileMenuOpen(false); // Close the mobile menu
   };
@@ -113,49 +112,49 @@ const Nav: React.FC = () => {
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
-                  onClick={() => handleScroll("solution7")}
+                  onClick={() => handleScroll("solutions1")}
                 >
                   Lead Management Systems
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
-                  onClick={() => handleScroll("solution8")}
+                  onClick={() => handleScroll("solutions2")}
                 >
                   Impactful Awareness Campaigns
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
-                  onClick={() => handleScroll("solution9")}
+                  onClick={() => handleScroll("solutions3")}
                 >
                   OTT Advertising
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
-                  onClick={() => handleScroll("solution9")}
+                  onClick={() => handleScroll("solutions4")}
                 >
                  Influencer Marketing
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
-                  onClick={() => handleScroll("solution9")}
+                  onClick={() => handleScroll("solutions5")}
                 >
                   IEC - Information Education Communication
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
-                  onClick={() => handleScroll("solution9")}
+                  onClick={() => handleScroll("solutions6")}
                 >
                   Live Coverage
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
-                  onClick={() => handleScroll("solution9")}
+                  onClick={() => handleScroll("solutions7")}
                 >
                   Video Shoots
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
-                  onClick={() => handleScroll("solution9")}
+                  onClick={() => handleScroll("solutions8")}
                 >
                   Public Relations
                 </button>
