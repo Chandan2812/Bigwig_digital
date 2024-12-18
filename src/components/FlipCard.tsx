@@ -1,6 +1,6 @@
 import { useState,useRef } from "react";
 import social_management from "../assets/social-media-manage.jpg"
-import seo from "../assets/seo.jpg"
+import seo from "../assets/seo1.jpg"
 const FlipCard = () => {
   const cards = [
     {
