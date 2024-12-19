@@ -6,8 +6,8 @@ import awareness from "../assets/gradient-activism-illustration_23-2150279230-re
 import influencer from "../assets/rb_2148526236.png"
 import live from "../assets/broadcasting-live-event_23-2148529703-removebg-preview.png"
 import video from "../assets/videographer-concept-illustration_114360-1504-removebg-preview.png"
-import relation from "../assets/public_relations-removebg-preview.png"
-import affiliate from "../assets/Affiliate_marketing-removebg-preview.png"
+import relation from "../assets/Public Relations.png"
+import affiliate from "../assets/Affiliate marketing (1).png"
 import iec from "../assets/IEC.png"
 
 type Section = {
@@ -147,23 +147,7 @@ const ScrollSections: React.FC = () => {
     },
     {
       id: 6,
-      backgroundColor: "bg-gray-200",
-      content: (
-        <>
-          <h1 className="text-4xl font-bold">Video Shoots</h1>
-          <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
-            Crafting Stories, Frame by Frame
-          </div>
-          <p className="mt-4 text-lg leading-relaxed text-justify">
-          Got a brand story to tell, an event to relive, or a documentary to memorialize? We are the cinematographic alchemists you're looking for! We transform your vision into high-definition reality. And our videos? They don't just reach your audience - they have a little chit-chat, share a laugh, and make a deep connection that resonates.
-          </p>
-        </>
-      ),
-      image: video,
-    },
-    {
-      id: 7,
-      backgroundColor: "bg-pink-200",
+      backgroundColor: "bg-rose-200",
       content: (
         <>
           <h1 className="text-4xl font-bold">Public Relations</h1>
@@ -178,8 +162,25 @@ const ScrollSections: React.FC = () => {
       image: relation,
     },
     {
+      id: 7,
+      backgroundColor: "bg-gray-200",
+      content: (
+        <>
+          <h1 className="text-4xl font-bold">Video Shoots</h1>
+          <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
+            Crafting Stories, Frame by Frame
+          </div>
+          <p className="mt-4 text-lg leading-relaxed text-justify">
+          Got a brand story to tell, an event to relive, or a documentary to memorialize? We are the cinematographic alchemists you're looking for! We transform your vision into high-definition reality. And our videos? They don't just reach your audience - they have a little chit-chat, share a laugh, and make a deep connection that resonates.
+          </p>
+        </>
+      ),
+      image: video,
+    },
+    
+    {
       id: 8,
-      backgroundColor: "bg-pink-200",
+      backgroundColor: "bg-rose-200",
       content: (
         <>
           <h1 className="text-4xl font-bold">Affiliate Marketing</h1>
