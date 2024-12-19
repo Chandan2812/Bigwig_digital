@@ -122,41 +122,42 @@ const Nav: React.FC = () => {
                 >
                   Impactful Awareness Campaigns
                 </button>
+                
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solutions3")}
-                >
-                  OTT Advertising
-                </button>
-                <button
-                  className="text-gray-600 hover:text-black text-sm text-left"
-                  onClick={() => handleScroll("solutions4")}
                 >
                  Influencer Marketing
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
-                  onClick={() => handleScroll("solutions5")}
+                  onClick={() => handleScroll("solutions4")}
                 >
                   IEC - Information Education Communication
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
-                  onClick={() => handleScroll("solutions6")}
+                  onClick={() => handleScroll("solutions5")}
                 >
                   Live Coverage
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
-                  onClick={() => handleScroll("solutions7")}
+                  onClick={() => handleScroll("solutions6")}
                 >
                   Video Shoots
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
-                  onClick={() => handleScroll("solutions8")}
+                  onClick={() => handleScroll("solutions7")}
                 >
                   Public Relations
+                </button>
+                <button
+                  className="text-gray-600 hover:text-black text-sm text-left"
+                  onClick={() => handleScroll("solutions8")}
+                >
+                  Affiliate Marketing
                 </button>
               </div>
             )}
