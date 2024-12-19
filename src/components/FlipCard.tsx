@@ -77,7 +77,7 @@ const FlipCard = () => {
 
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-11/12 mx-auto pt-4 mb-10 md:mb-12">
+    <div id="solution" className="grid grid-cols-1 md:grid-cols-3 gap-6 w-11/12 mx-auto pt-4 mb-10 md:mb-12">
       {cards.map((card, index) => (
         <div
           key={card.id}
