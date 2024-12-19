@@ -1,6 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import lms from "../assets/pngaaa.com-1499670.png"
+import awareness from "../assets/gradient-activism-illustration_23-2150279230-removebg-preview.png"
+import influencer from "../assets/rb_2148526236.png"
+import live from "../assets/broadcasting-live-event_23-2148529703-removebg-preview.png"
+import video from "../assets/videographer-concept-illustration_114360-1504-removebg-preview.png"
+import relation from "../assets/public_relations-removebg-preview.png"
+import affiliate from "../assets/1665746918661-removebg-preview.png"
+import iec from "../assets/IEC-MAP1-removebg-preview.png"
 
 type Section = {
   id: number;
@@ -48,7 +56,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ section, isReversed }
         <img
           src={section.image}
           alt={`Section ${section.id}`}
-          className="rounded-lg shadow-lg w-full h-[25vh] md:h-[60vh]"
+          className="rounded-lg w-full h-[25vh] md:h-[60vh]"
         />
       </motion.div>
     </motion.div>
@@ -71,7 +79,7 @@ const ScrollSections: React.FC = () => {
           </p>
         </>
       ),
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0c75865ce04bc4a2f6962_features-1-p-800.webp",
+      image: lms,
     },
     {
       id: 2,
@@ -87,7 +95,7 @@ const ScrollSections: React.FC = () => {
           </p>
         </>
       ),
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0c91de4d89a6bc9f7400e_features-2-p-800.webp",
+      image: awareness,
     },
     {
       id: 3,
@@ -103,7 +111,7 @@ const ScrollSections: React.FC = () => {
           </p>
         </>
       ),
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
+      image: influencer,
     },
     {
       id: 4,
@@ -119,7 +127,7 @@ const ScrollSections: React.FC = () => {
           </p>
         </>
       ),
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
+      image: iec,
     },
     {
       id: 5,
@@ -135,7 +143,7 @@ const ScrollSections: React.FC = () => {
           </p>
         </>
       ),
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
+      image: live,
     },
     {
       id: 6,
@@ -151,7 +159,7 @@ const ScrollSections: React.FC = () => {
           </p>
         </>
       ),
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
+      image: video,
     },
     {
       id: 7,
@@ -167,7 +175,7 @@ const ScrollSections: React.FC = () => {
           </p>
         </>
       ),
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
+      image: relation,
     },
     {
       id: 8,
@@ -183,7 +191,7 @@ const ScrollSections: React.FC = () => {
           </p>
         </>
       ),
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66d0cff2b375cf7c08117505_features-3-p-800.webp",
+      image: affiliate,
     },
   ];
   

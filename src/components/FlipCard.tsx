@@ -27,7 +27,7 @@ const FlipCard = () => {
       title: "Marketing Strategies That Help You Stay Ahead of the Competition",
       description:
         "Marketing is a race, and we’re here to make sure you’re not the one tripping over your shoelaces. Our data-driven approach will keep you ahead of the pack, converting browsers into buyers faster than you can say ‘ROI.’",
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdc22f20352e7c549a58f9_pexels-tim-samuel-6697318-p-500.webp",
+      image: "https://media.licdn.com/dms/image/C4E12AQEewYeoQlcUWA/article-cover_image-shrink_600_2000/0/1627198487357?e=2147483647&v=beta&t=GkhDhML28sg27hBGNbo-mLtzG2LRcReTGtLtFv8YeFM",
       bgColor: "bg-purple-200",
     },
     {
@@ -36,7 +36,7 @@ const FlipCard = () => {
       title: "Building and Protecting Your Brand’s Online Reputation",
       description:
         "The internet never forgets, but don’t worry—we’ve got your back. With us on your team, your brand will look so good online that even your competitors might want to leave a five-star review!",
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66e1de15588d4888d2ece3a7_solutions-header-2-p-500.webp",
+      image: "https://www.minddigital.com/wp-content/uploads/2015/01/Online-Reputation-Management-01.jpg",
       bgColor: "bg-green-200",
     },
     {
@@ -45,7 +45,7 @@ const FlipCard = () => {
       title: "Creating Content That Speaks Your Brand’s Language",
       description:
         "Content is king, but let’s be honest—it also needs to be funny, smart, and look amazing. That’s where we come in. We’ll create content that grabs attention, keeps it, and maybe even gets a standing ovation.",
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66e1de26c6bc75951fab4a7f_solutions-header-3-p-500.webp",
+      image: "https://b83eeb945e2915539af8.ucr.io/-/quality/best/https://d1qwl4ymp6qhug.cloudfront.net/Images%20for%20blog/Branded-content-types.png",
       bgColor: "bg-pink-200",
     },
     {
@@ -54,7 +54,7 @@ const FlipCard = () => {
       title: "Bringing Bold Ideas to Life Through Creative Storytelling",
       description:
         "Your brand deserves more than cookie-cutter creativity. We’ll serve up fresh, jaw-dropping ideas so good they’ll have your audience saying, ‘Wow, I didn’t see that coming!’ Let’s turn your wildest dreams into even wilder realities.",
-      image: "https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66e1de0640b5270c55d1bf6f_solutions-header-1-p-500.webp",
+      image: "https://blog.webit.org/wp-content/uploads/2015/03/OCIHO30.jpg",
       bgColor: "bg-teal-200",
     },
   ];
@@ -77,27 +77,24 @@ const FlipCard = () => {
 
 
   return (
-    <div id="solution1" className="grid grid-cols-1 md:grid-cols-3 gap-6 w-11/12 mx-auto pt-4 mb-10 md:mb-12">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-11/12 mx-auto pt-4 mb-10 md:mb-12">
       {cards.map((card, index) => (
         <div
-        key={card.id}
-        ref={(el) => (sectionsRef.current[card.id] = el)} // Store section refs dynamically
-        id={card.id} // Assign unique id to each section
-        className="group w-full sm:w-full md:w-96 h-[400px] md:h-[500px] perspective"
-      >
-          {/* Flip Container */}
+          key={card.id}
+          ref={(el) => (sectionsRef.current[card.id] = el)}
+          id={card.id}
+          className="group w-full sm:w-full md:w-96 h-[500px] perspective"
+        >
           <div
             className={`relative w-full h-full rounded-lg transform-style-preserve-3d transition-transform duration-500 ${
               flippedStates[index] ? "rotate-y-180" : ""
             }`}
           >
-            {/* Front Side */}
             <div
-              className={`absolute w-full h-full md:h-[70vh] backface-hidden rounded-2xl overflow-hidden ${card.bgColor}`}
+              className={`absolute w-full h-full backface-hidden rounded-2xl overflow-hidden ${card.bgColor}`}
             >
-              {/* Title Badge */}
               <div className="border-2 border-black absolute top-8 left-6 bg-white px-6 py-3 rounded-full text-sm font-semibold">
-              {card.solution}
+                {card.solution}
               </div>
               <div className="absolute top-8 right-6 rounded-full text-sm font-semibold">
                 <img
@@ -107,22 +104,19 @@ const FlipCard = () => {
                 />
               </div>
 
-              {/* Card Text */}
               <div className="p-4 h-1/3 flex flex-col items-center justify-center mt-20">
                 <h3 className="text-lg md:text-2xl font-bold">{card.title}</h3>
               </div>
 
-              {/* Card Image */}
               <div className="relative h-1/2">
                 <img
                   src={card.image}
                   alt={card.title}
                   className="w-full h-full object-cover"
                 />
-                {/* Flip Button */}
                 <button
                   onClick={() => handleFlip(index)}
-                  className="absolute bottom-4 right-4 px-5 py-5 border-2 border-black border-r-4 border-r-black bg-white rounded-full shadow-md hover:bg-gray-100 transition"
+                  className="absolute bottom-4 right-4 px-5 py-5 border-2 border-black bg-white rounded-full shadow-md hover:bg-gray-100 transition"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -142,11 +136,9 @@ const FlipCard = () => {
               </div>
             </div>
 
-            {/* Back Side */}
             <div
-              className={`absolute w-full h-full md:h-[70vh] backface-hidden rotate-y-180 rounded-lg flex flex-col items-center justify-center p-6 ${card.bgColor}`}
+              className={`absolute w-full h-full backface-hidden rotate-y-180 rounded-lg flex flex-col items-center justify-center p-6 ${card.bgColor}`}
             >
-              {/* Title Badge */}
               <div className="border-2 border-black absolute top-8 left-6 bg-white px-6 py-3 rounded-full text-sm font-semibold">
                 Solution
               </div>
@@ -157,18 +149,14 @@ const FlipCard = () => {
                   className="w-10"
                 />
               </div>
-
-              {/* Description */}
               <p className="text-justify text-md md:text-xl">
                 {card.description}
               </p>
-
-              {/* Back Side Button */}
               <button
                 onClick={() => handleFlip(index)}
-                className="px-5 py-4 border-2 border-black border-r-4 border-r-black absolute bottom-4 right-4 bg-white rounded-full shadow-md hover:bg-gray-100 transition font-bold text-2xl"
+                className="px-5 py-4 border-2 border-black absolute bottom-4 right-4 bg-white rounded-full shadow-md hover:bg-gray-100 transition font-bold text-2xl"
               >
-                — {/* Bold dash with larger font size */}
+                —
               </button>
             </div>
           </div>
