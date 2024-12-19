@@ -1,130 +1,114 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faXTwitter, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faXTwitter, faYoutube, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Footer: React.FC = () => {
   return (
-    <div className="relative bg-white py-12">
-
-      {/* Centered Footer Div */}
-      <div className="relative z-10 mx-auto w-11/12 px-14 md:px-16 py-12 rounded-xl bg-black text-white">
+    <footer className="relative bg-gray-900 text-gray-200 py-16">
+      {/* Footer Content */}
+      <div className="container mx-auto px-8 md:px-16">
         {/* Top Section */}
-        <div className="flex flex-col md:flex-row md:justify-between mb-28">
-          {/* Left Section */}
-          <h1 className=" md:w-2/3 text-3xl md:text-2xl text-left md:text-left mb-6 md:mb-0">
-            BigwigMedia.ae
-          </h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+          {/* About Section */}
+          <div>
+            <h2 className="text-2xl font-bold mb-4">BigwigMedia.ae</h2>
+            <p className="text-gray-400">
+              Elevating your media presence with innovative solutions and unmatched creativity. Let's build something extraordinary together.
+            </p>
+          </div>
 
-          {/* Right Section - Newsletter */}
-          {/* <div className="md:w-1/3 flex flex-col sm:px-8 items-start">
-            <label
-              htmlFor="email"
-              className="text-xl mb-2 text-gray-300"
-            >
-              Subscribe to our newsletter
-            </label>
-            <div className="flex flex-col items-start gap-5">
-              <input
-                type="email"
-                id="email"
-                placeholder="Your Email"
-                className="md:w-80 px-4 py-3 rounded-md bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500"
-              />
-              <button className="ml-2 px-5 py-3 bg-purple-500 rounded-full text-white hover:bg-purple-600 transition">
-                Submit
-              </button>
+          {/* Links Section */}
+          <div className="grid grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Pages</h3>
+              <ul className="space-y-2">
+                <li><a href="#" className="hover:underline">Home</a></li>
+                <li><a href="#" className="hover:underline">About</a></li>
+                <li><a href="#" className="hover:underline">Services</a></li>
+                <li><a href="#" className="hover:underline">Pricing</a></li>
+                <li><a href="#" className="hover:underline">Contact</a></li>
+              </ul>
             </div>
-          </div> */}
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Resources</h3>
+              <ul className="space-y-2">
+                <li><a href="#" className="hover:underline">Blog</a></li>
+                <li><a href="#" className="hover:underline">Case Studies</a></li>
+                <li><a href="#" className="hover:underline">FAQ</a></li>
+                <li><a href="#" className="hover:underline">Support</a></li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Featured Services Section */}
+<div>
+  <h3 className="text-lg font-semibold mb-4">Featured Services</h3>
+  <p className="text-gray-400 mb-4">
+    Our expert solutions to elevate your business.
+  </p>
+  <ul className="space-y-2">
+    <li><a href="#" className="hover:underline">Digital Marketing</a></li>
+    <li><a href="#" className="hover:underline">Video Production</a></li>
+    <li><a href="#" className="hover:underline">Web Development</a></li>
+    <li><a href="#" className="hover:underline">Graphic Design</a></li>
+  </ul>
+</div>
+
+
         </div>
 
-        
         {/* Bottom Section */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:text-left">
-          {/* Pages */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Pages</h4>
-            <ul className="space-y-2">
-              <li>Home</li>
-              <li>About</li>
-              <li>Shop</li>
-              <li>Cases</li>
-              <li>Pricing</li>
-              <li>FAQ</li>
-            </ul>
+        <div className="flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-8">
+          {/* Social Icons */}
+          <div className="flex space-x-4 mb-4 md:mb-0">
+            <a
+              href="https://www.facebook.com/bigwigmedia.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl hover:text-white transition"
+            >
+              <FontAwesomeIcon icon={faFacebookF} />
+            </a>
+            <a
+              href="https://www.instagram.com/bigwigmedia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl hover:text-white transition"
+            >
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCA0GIfKW7ORxUT6_mMnEEzQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl hover:text-white transition"
+            >
+              <FontAwesomeIcon icon={faYoutube} />
+            </a>
+            <a
+              href="https://x.com/bigwig_media"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl hover:text-white transition"
+            >
+              <FontAwesomeIcon icon={faXTwitter} />
+            </a>
           </div>
 
-          {/* Features */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Features</h4>
-            <ul className="space-y-2">
-              <li>Features 1</li>
-              <li>Features 2</li>
-              <li>Features 3</li>
-            </ul>
+          {/* Footer Links */}
+          <div className="flex space-x-6 text-gray-400 text-sm">
+            <a href="#" className="hover:underline">Privacy Policy</a>
+            <a href="#" className="hover:underline">Terms of Service</a>
+            <a href="#" className="hover:underline">Sitemap</a>
           </div>
 
-          {/* Solutions */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Solutions</h4>
-            <ul className="space-y-2">
-              <li>Solutions 1</li>
-              <li>Solutions 2</li>
-              <li>Solutions 3</li>
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Contact</h4>
-            <ul className="space-y-2">
-              <li>Contact 1</li>
-              <li>Contact 2</li>
-              <li>Contact 3</li>
-            </ul>
-          </div>
-
-          {/* Social */}
-          <div>
-      <h4 className="text-lg font-semibold mb-4">Social</h4>
-      <div className="sm:w-full flex justify-start space-x-5 md:space-x-4 border-3 border-red-600 z-50">
-        {/* Social Icons */}
-        <a href="https://www.facebook.com/bigwigmedia.in/" target="_blank" rel="noopener noreferrer" className="text-2xl cursor-pointer">
-          <FontAwesomeIcon icon={faFacebookF} />
-        </a>
-        <a href="https://www.instagram.com/bigwigmedia/" target="_blank" rel="noopener noreferrer" className="text-2xl cursor-pointer">
-          <FontAwesomeIcon icon={faInstagram} />
-        </a>
-        <a href="https://www.youtube.com/channel/UCA0GIfKW7ORxUT6_mMnEEzQ" target="_blank" rel="noopener noreferrer" className="text-2xl cursor-pointer">
-          <FontAwesomeIcon icon={faYoutube} />
-        </a>
-        <a href="https://x.com/bigwig_media" target="_blank" rel="noopener noreferrer" className="text-2xl cursor-pointer">
-          <FontAwesomeIcon icon={faXTwitter} />
-        </a>
-      </div>
-    </div>
-        </div>
-        </div>
-
-        {/* Footer Bottom */}
-        <div className="mx-auto w-11/12 mt-8 flex flex-col md:flex-row text-center justify-between items-center text-md text-gray-700">
-          <p className="mb-4 md:mb-0 ">
-          © 2024 Bigwigmedia.ae. All rights reserved.
+          {/* Footer Copy */}
+          <p className="text-sm text-gray-500 mt-4 md:mt-0">
+            © 2024 BigwigMedia.ae. All rights reserved.
           </p>
-          <div className="flex space-x-5 ">
-            <a href="#" className="hover:underline">
-              Style Guide
-            </a>
-            <a href="#" className="hover:underline">
-              Licenses
-            </a>
-            <a href="#" className="hover:underline">
-              Changelog
-            </a>
-          </div>
         </div>
       </div>
-    
+    </footer>
   );
 };
 
