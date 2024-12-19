@@ -8,7 +8,7 @@ import live from "../assets/broadcasting-live-event_23-2148529703-removebg-previ
 import video from "../assets/videographer-concept-illustration_114360-1504-removebg-preview.png"
 import relation from "../assets/public_relations-removebg-preview.png"
 import affiliate from "../assets/Affiliate_marketing-removebg-preview.png"
-import iec from "../assets/IEC-MAP1-removebg-preview.png"
+import iec from "../assets/IEC.png"
 
 type Section = {
   id: number;
