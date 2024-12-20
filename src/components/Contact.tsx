@@ -17,7 +17,6 @@ const ContactUs: React.FC = () => {
   });
 
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -28,7 +27,6 @@ const ContactUs: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError(null);
 
     try {
       await emailjs.send(
@@ -46,7 +44,6 @@ const ContactUs: React.FC = () => {
       setFormSubmitted(true);
     } catch (err) {
       console.error("EmailJS Error:", err);
-      setError("Failed to send the message. Please try again later.");
     }
   };
 
