@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import social from "../assets/Handleey-Social-Media-Post.webp"
-import affiliate from "../assets/Affiliate marketing (1).png"
+import affiliate from "../assets/afiliated.webp"
 import google_ad from "../assets/google_ad.png"
 import seo from "../assets/Handleey-Web_Analysis-New-removebg-preview.webp"
 import performance from "../assets/Handleey-SMS-New-removebg-preview.webp"
