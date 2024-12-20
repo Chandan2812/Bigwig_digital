@@ -60,24 +60,28 @@ function Landing() {
       <Footer />
 
       {/* Scroll and Contact Us Buttons */}
-      {isVisible && (
-        <div className="fixed bottom-10 right-2 flex flex-col items-center space-y-4 z-50">
-          <button
-            onClick={openContactPanel}
-            className="bg-blue-500 text-white py-4 px-4 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 hover:scale-110"
-            title='Contact Us'
-          >
-            <FaRegMessage className='size-5 '/>
-          </button>
-          <button
-            onClick={scrollToTop}
-            className="bg-black text-white w-12 h-12 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-110 flex items-center justify-center"
-            title='Scroll Top'
-          >
-            ↑
-          </button>
-        </div>
-      )}
+<div className="fixed bottom-10 right-2 flex flex-col items-center space-y-4 z-50">
+  {/* Contact Us Button - Always Visible */}
+  <button
+    onClick={openContactPanel}
+    className="bg-blue-500 text-white py-4 px-4 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 hover:scale-110"
+    title="Contact Us"
+  >
+    <FaRegMessage className="size-5" />
+  </button>
+
+  {/* Scroll Top Button - Conditionally Visible */}
+  {isVisible && (
+    <button
+      onClick={scrollToTop}
+      className="bg-black text-white w-12 h-12 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-110 flex items-center justify-center"
+      title="Scroll Top"
+    >
+      ↑
+    </button>
+  )}
+</div>
+
 
       <div
   className={`fixed top-14 right-0 w-80 h-4/5 bg-gray-100 rounded-lg shadow-lg p-6 z-50 transform ${
