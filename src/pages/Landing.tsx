@@ -50,8 +50,8 @@ function Landing() {
     <>
       <Nav />
       <Hero />
-      <FlipCard />
       <ScrollOverlappingSections />
+      <FlipCard />
       <CaseCard />
       <Blog />
       <AboutUs />
