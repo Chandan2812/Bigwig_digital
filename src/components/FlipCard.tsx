@@ -93,13 +93,13 @@ const FlipCard = () => {
 
 
   return (
-    <div id="solution" className="grid grid-cols-1 md:grid-cols-3 gap-6 w-11/12 mx-auto pt-4 mb-10 md:mb-12">
+    <div id="solution" className="grid grid-cols-1 md:grid-cols-3 gap-16 w-11/12 mx-auto pt-4 mb-10 md:mb-12">
       {cards.map((card, index) => (
         <div
           key={card.id}
           ref={(el) => (sectionsRef.current[card.id] = el)}
           id={card.id}
-          className="group w-full sm:w-full md:w-96 h-[350px] perspective"
+          className="group w-full sm:w-full md:w-96 h-[300px] perspective mx-auto"
         >
           <div
             className={`relative w-full h-full rounded-lg transform-style-preserve-3d transition-transform duration-500 ${
@@ -109,10 +109,10 @@ const FlipCard = () => {
             <div
               className={`absolute w-full h-full backface-hidden rounded-2xl overflow-hidden ${card.bgColor}`}
             >
-              <div className=" absolute top-6 left-4 ">
+              <div className="absolute top-6 left-4">
                 {card.icon}
               </div>
-
+  
               <div className="absolute top-6 right-4 rounded-full text-sm font-semibold">
                 <img
                   src="https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdb85d740ac1a54de3fdc1_icon-grid.svg"
@@ -120,12 +120,12 @@ const FlipCard = () => {
                   className="w-8"
                 />
               </div>
-
+  
               <div className="p-4 h-1/2 flex flex-col mt-20">
                 <h3 className="text-lg md:text-xl font-bold text-left">{card.solution}</h3>
-                <p className="mt-6">{card.description}</p>
+                <p className="mt-6">{card.title}</p>
               </div>
-
+  
               <button
                 onClick={() => handleFlip(index)}
                 className="absolute bottom-4 right-4 px-4 py-4 border-2 border-black bg-white rounded-full shadow-md hover:bg-gray-100 transition"
@@ -142,7 +142,7 @@ const FlipCard = () => {
                 </svg>
               </button>
             </div>
-
+  
             <div
               className={`absolute w-full h-full backface-hidden rotate-y-180 rounded-lg flex flex-col items-center justify-center p-6 ${card.bgColor}`}
             >
@@ -171,6 +171,7 @@ const FlipCard = () => {
       ))}
     </div>
   );
+  
 };
 
 export default FlipCard;
