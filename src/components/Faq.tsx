@@ -53,7 +53,7 @@ function FAQ() {
 
   return (
     <div id="faq" className="w-full mx-auto px-6 md:px-16 py-6 ">
-      <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">
+      <h2 className="text-3xl font-semibold text-gray-900 mb-8 text-center">
         Frequently Asked Questions
       </h2>
       <div className="md:max-w-5xl  mx-auto ">

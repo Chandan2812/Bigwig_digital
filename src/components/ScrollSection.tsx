@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import social from "../assets/Handleey-Social-Media-Post.webp"
-import affiliate from "../assets/afiliated.webp"
 import google_ad from "../assets/google_ad.png"
 import seo from "../assets/Handleey-Web_Analysis-New-removebg-preview.webp"
 import performance from "../assets/Handleey-SMS-New-removebg-preview.webp"
@@ -31,7 +30,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ section, isReversed }
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className={`flex flex-col md:flex-row gap-9 w-11/12 mx-auto mb-20 rounded-xl h-fit ${
+      className={`flex flex-col md:flex-row gap-9 w-11/12 mx-auto mb-12 rounded-xl h-fit ${
         isReversed ? "md:flex-row-reverse" : ""
       } items-center py-8 px-8 md:px-10 ${section.backgroundColor}`}
     >
@@ -125,22 +124,6 @@ const ScrollSections: React.FC = () => {
     },    
     {
       id: 5,
-      backgroundColor: "bg-purple-200",
-      content: (
-        <>
-          <h1 className="text-4xl font-bold">Affiliate Marketing</h1>
-          <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
-          Partnering Smartly to Multiply Your Reach!
-          </div>
-          <p className="mt-4 text-lg leading-relaxed text-justify">
-          Think of us as your brand’s ultimate matchmaker—pairing you up with affiliates who will shout your praises from the rooftops (or at least their websites). We’ll help you create a win-win partnership so smooth, even Cupid would be jealous. Cha-ching for everyone involved!
-          </p>
-        </>
-      ),
-      image: affiliate,
-    },
-    {
-      id: 6,
       backgroundColor: "bg-teal-200",
       content: (
         <>
@@ -154,7 +137,7 @@ const ScrollSections: React.FC = () => {
         </>
       ),
       image: google_ad, // Replace 'gmb' with the actual imported image variable for Google My Business
-    }
+    },
     
   ];
   

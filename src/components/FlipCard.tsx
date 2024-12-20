@@ -1,6 +1,7 @@
 import { useState,useRef } from "react";
 import { FaUsers, FaBullhorn, FaBroadcastTower, FaNewspaper, FaVideo, FaLightbulb, FaBrush } from "react-icons/fa";
 import { GiAwareness } from "react-icons/gi";
+import { SiGooglemarketingplatform } from "react-icons/si";
 const FlipCard = () => {
   const cards = [
     {
@@ -74,6 +75,15 @@ const FlipCard = () => {
         "No cookie-cutter solutions here! Just bold ideas so wild, your audience will say, ‘Wow, didn’t see that coming!’",
       bgColor: "bg-violet-200",
       icon: <FaLightbulb className="text-4xl text-violet-600" />,
+    },
+    {
+      id: "solutions9",
+      solution: "Affiliate Marketing",
+      title: "Partnering Smartly to Multiply Your Reach!",
+      description:
+        "Think of us as your brand’s ultimate matchmaker—pairing you up with affiliates who will shout your praises from the rooftops (or at least their websites). We’ll help you create a win-win partnership so smooth, even Cupid would be jealous. Cha-ching for everyone involved!",
+      bgColor: "bg-red-200",
+      icon: <SiGooglemarketingplatform className="text-4xl text-red-400" />,
     },
   ];
   

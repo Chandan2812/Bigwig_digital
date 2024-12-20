@@ -6,7 +6,8 @@ const Hero: React.FC = () => {
   const items = [
     "Say goodbye 👋 ",
     "to old marketing",
-    "Try BigWigMedia Digital Powered by AI",
+    "Try BigWigMedia ",
+    "Powered by AI",
     "Discover a smarter way to manage your marketing campaigns with the power of AI. Transform your brand and reach new heights effortlessly."
   ];
 
@@ -21,22 +22,24 @@ const Hero: React.FC = () => {
   return (
     <div
       id="top"
-      className="flex flex-col md:flex-row items-center justify-between bg-white mt-5 mb-10 md:mb-24 px-4 md:px-16"
+      className="flex flex-col md:flex-row items-center justify-between bg-white mt-5 mb-10 md:mb-12 px-4 md:px-16"
     >
       {/* Text Section */}
       <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
         {trail.map((style, index) => (
           <animated.div key={index} style={style} className="mb-2">
-            {index === 0 || index === 2 ? (
+            {index === 0 || index === 1 ? (
               <h1
                 className={`text-2xl md:text-5xl font-bold ${
-                  (index as number) === 1 ? "line-through text-gray-400" : ""
+                  index === 1 ? "line-through text-gray-400" : ""
                 }`}
               >
                 {items[index]}
               </h1>
-            ) : (index as number) === 1 ? (
-              <h1 className="line-through text-gray-400 text-2xl md:text-5xl font-bold">
+            ) : index === 2 ? (
+              <h1 className="text-2xl md:text-5xl font-bold">{items[index]}</h1>
+            ) : index === 3 ? (
+              <h1 className="text-2xl md:text-5xl font-bold text-red-500 italic">
                 {items[index]}
               </h1>
             ) : (

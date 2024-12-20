@@ -45,7 +45,7 @@ const CaseCard: React.FC = () => {
   return (
     <div className="p-8 min-h-screen w-11/12 mx-auto">
       {/* Header Section */}
-      <h1 className="text-4xl font-bold text-gray-900 mb-8">
+      <h1 className="text-3xl font-semibold text-gray-900 mb-8 text-center">
         Leading business trusted <span className="text-yellow-500">👍</span> us
       </h1>
 
