@@ -10,6 +10,8 @@ import { useEffect, useState } from 'react';
 import Blog from '../components/Blog';
 import ImageSlider from '../components/ImageSlider';
 import ContactUs from '../components/Contact';
+import { FaRegMessage } from "react-icons/fa6";
+
 
 function Landing() {
   const [isVisible, setIsVisible] = useState(false);
@@ -59,16 +61,18 @@ function Landing() {
 
       {/* Scroll and Contact Us Buttons */}
       {isVisible && (
-        <div className="fixed bottom-10 right-10 flex flex-col items-center space-y-4 z-50">
+        <div className="fixed bottom-10 right-2 flex flex-col items-center space-y-4 z-50">
           <button
             onClick={openContactPanel}
-            className="bg-blue-500 text-white py-2 px-4 rounded-md shadow-lg hover:bg-blue-600 transition-all duration-300"
+            className="bg-blue-500 text-white py-4 px-4 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300"
+            title='Contact Us'
           >
-            Contact Us
+            <FaRegMessage className='size-5 '/>
           </button>
           <button
             onClick={scrollToTop}
             className="bg-black text-white w-12 h-12 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-110 flex items-center justify-center"
+            title='Scroll Top'
           >
             ↑
           </button>
