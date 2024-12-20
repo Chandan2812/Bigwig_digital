@@ -64,7 +64,7 @@ function Landing() {
         <div className="fixed bottom-10 right-2 flex flex-col items-center space-y-4 z-50">
           <button
             onClick={openContactPanel}
-            className="bg-blue-500 text-white py-4 px-4 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300"
+            className="bg-blue-500 text-white py-4 px-4 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 hover:scale-110"
             title='Contact Us'
           >
             <FaRegMessage className='size-5 '/>
