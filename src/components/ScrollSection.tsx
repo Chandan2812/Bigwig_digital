@@ -121,9 +121,25 @@ const ScrollSections: React.FC = () => {
         </>
       ),
       image: "https://handleey.com/handleey/assets/img/images/Pending-Reviews.png",
-    },    
+    },  
     {
       id: 5,
+      backgroundColor: "bg-purple-200",
+      content: (
+        <>
+          <h1 className="text-4xl font-bold">Web Design and App Development</h1>
+          <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
+            Crafting Seamless Digital Experiences!
+          </div>
+          <p className="mt-4 text-lg leading-relaxed text-justify">
+            From pixel-perfect websites to feature-rich mobile apps, we bring your ideas to life with designs that inspire and functionality that delivers. Let us help you create a digital presence that's as sleek as it is user-friendly, ensuring your audience stays engaged and your brand stands out.
+          </p>
+        </>
+      ),
+      image: google_ad,
+    },  
+    {
+      id: 6,
       backgroundColor: "bg-teal-200",
       content: (
         <>

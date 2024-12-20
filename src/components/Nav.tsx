@@ -16,7 +16,7 @@ const Nav: React.FC = () => {
 
   return (
     <nav className="bg-white sticky top-0 z-50">
-      <div className="container max-w-6xl mx-auto px-4 flex justify-between items-center py-3">
+      <div className="container max-w-7xl px-6 mx-auto flex justify-between items-center py-3">
         {/* Logo Section */}
         <div className="flex items-center">
           <button
@@ -102,7 +102,7 @@ const Nav: React.FC = () => {
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solution5")}
                 >
-                  Affiliate Marketing
+                  Web Design and App Development
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
@@ -158,6 +158,12 @@ const Nav: React.FC = () => {
                   onClick={() => handleScroll("solutions8")}
                 >
                  Creative Innovations
+                </button>
+                <button
+                  className="text-gray-600 hover:text-black text-sm text-left"
+                  onClick={() => handleScroll("solutions9")}
+                >
+                 Affiliate Marketing
                 </button>
                 
                 
