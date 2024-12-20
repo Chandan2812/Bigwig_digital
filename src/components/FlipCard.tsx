@@ -83,7 +83,7 @@ const FlipCard = () => {
           key={card.id}
           ref={(el) => (sectionsRef.current[card.id] = el)}
           id={card.id}
-          className="group w-full sm:w-full md:w-96 h-[500px] perspective"
+          className="group w-full sm:w-full md:w-96 h-[350px] perspective"
         >
           <div
             className={`relative w-full h-full rounded-lg transform-style-preserve-3d transition-transform duration-500 ${
@@ -93,63 +93,52 @@ const FlipCard = () => {
             <div
               className={`absolute w-full h-full backface-hidden rounded-2xl overflow-hidden ${card.bgColor}`}
             >
-              <div className="border-2 border-black absolute top-8 left-6 bg-white px-6 py-3 rounded-full text-sm font-semibold">
+              <div className="border-2 border-black absolute top-6 left-4 bg-white px-6 py-3 rounded-full text-sm font-semibold">
                 {card.solution}
               </div>
-              <div className="absolute top-8 right-6 rounded-full text-sm font-semibold">
+              <div className="absolute top-6 right-4 rounded-full text-sm font-semibold">
                 <img
                   src="https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdb85d740ac1a54de3fdc1_icon-grid.svg"
-                  alt=""
-                  className="w-10"
+                  alt="icon"
+                  className="w-8"
                 />
               </div>
 
-              <div className="p-4 h-1/3 flex flex-col items-center justify-center mt-20">
-                <h3 className="text-lg md:text-2xl font-bold">{card.title}</h3>
+              <div className="p-4 h-1/2 flex flex-col items-center justify-center mt-20">
+                <h3 className="text-lg md:text-xl font-bold text-left">{card.title}</h3>
               </div>
 
-              <div className="relative h-1/2">
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  className="w-full h-full object-fill"
-                />
-                <button
-                  onClick={() => handleFlip(index)}
-                  className="absolute bottom-4 right-4 px-5 py-5 border-2 border-black bg-white rounded-full shadow-md hover:bg-gray-100 transition"
+              <button
+                onClick={() => handleFlip(index)}
+                className="absolute bottom-4 right-4 px-4 py-4 border-2 border-black bg-white rounded-full shadow-md hover:bg-gray-100 transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="2"
+                  stroke="currentColor"
+                  className="w-6 h-6"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </button>
-              </div>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
             </div>
 
             <div
               className={`absolute w-full h-full backface-hidden rotate-y-180 rounded-lg flex flex-col items-center justify-center p-6 ${card.bgColor}`}
             >
-              <div className="border-2 border-black absolute top-8 left-6 bg-white px-6 py-3 rounded-full text-sm font-semibold">
+              <div className="border-2 border-black absolute top-6 left-4 bg-white px-6 py-3 rounded-full text-sm font-semibold">
                 Solution
               </div>
-              <div className="absolute top-8 right-6 rounded-full text-sm font-semibold">
+              <div className="absolute top-6 right-4 rounded-full text-sm font-semibold">
                 <img
                   src="https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdb85d740ac1a54de3fdc1_icon-grid.svg"
-                  alt=""
-                  className="w-10"
+                  alt="icon"
+                  className="w-8"
                 />
               </div>
-              <p className="text-justify text-md md:text-xl">
+              <p className="text-justify text-md md:text-lg">
                 {card.description}
               </p>
               <button
