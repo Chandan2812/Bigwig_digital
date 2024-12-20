@@ -16,7 +16,7 @@ const Nav: React.FC = () => {
 
   return (
     <nav className="bg-white sticky top-0 z-50">
-      <div className="container max-w-7xl px-6 mx-auto flex justify-between items-center py-3">
+      <div className="container px-4 md:px-16 mx-auto flex justify-between items-center py-3">
         {/* Logo Section */}
         <div className="flex items-center">
           <button
