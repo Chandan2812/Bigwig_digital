@@ -1,5 +1,6 @@
 import { useState,useRef } from "react";
-
+import { FaUsers, FaBullhorn, FaBroadcastTower, FaNewspaper, FaVideo, FaLightbulb, FaBrush } from "react-icons/fa";
+import { GiAwareness } from "react-icons/gi";
 const FlipCard = () => {
   const cards = [
     {
@@ -9,6 +10,7 @@ const FlipCard = () => {
       description:
         "Boost your brand with a lead system so smooth, your competitors will wonder if it's magic. Say goodbye to missed opportunities and hello to seamless conversions!",
       bgColor: "bg-yellow-200",
+      icon: <FaUsers className="text-4xl text-yellow-600" />,
     },
     {
       id: "solutions2",
@@ -17,6 +19,7 @@ const FlipCard = () => {
       description:
         "Ready to shine? We’ll grab eyeballs, spark emotions, and deliver success with strategies so good, even your grandma will notice your brand.",
       bgColor: "bg-blue-200",
+      icon: <GiAwareness className="text-4xl text-blue-600" />,
     },
     {
       id: "solutions3",
@@ -24,8 +27,8 @@ const FlipCard = () => {
       title: "Amplify Your Brand’s Story with Voices Everyone Trusts",
       description:
         "From strategy to stardom, we’ll pair you with influencers who make waves—and results that’ll make you say, ‘Is this real life?’",
-      image: "https://media.licdn.com/dms/image/C4E12AQEewYeoQlcUWA/article-cover_image-shrink_600_2000/0/1627198487357?e=2147483647&v=beta&t=GkhDhML28sg27hBGNbo-mLtzG2LRcReTGtLtFv8YeFM",
       bgColor: "bg-purple-200",
+      icon: <FaBullhorn className="text-4xl text-purple-600" />,
     },
     {
       id: "solutions4",
@@ -33,8 +36,8 @@ const FlipCard = () => {
       title: "Teleporting Your Audience to the Heart of Every Event",
       description:
         "From concerts to conferences, we’ll bring the action to life—no FOMO, just unforgettable moments straight to their screens.",
-      image: "https://www.minddigital.com/wp-content/uploads/2015/01/Online-Reputation-Management-01.jpg",
       bgColor: "bg-green-200",
+      icon: <FaBroadcastTower className="text-4xl text-green-600" />,
     },
     {
       id: "solutions5",
@@ -42,8 +45,8 @@ const FlipCard = () => {
       title: "Turning Your Achievements into Headlines That Matter",
       description:
         "From local buzz to global fame, we’ll make sure your story lands where it counts. Fame not included, but definitely earned!",
-      image: "https://b83eeb945e2915539af8.ucr.io/-/quality/best/https://d1qwl4ymp6qhug.cloudfront.net/Images%20for%20blog/Branded-content-types.png",
       bgColor: "bg-pink-200",
+      icon: <FaNewspaper className="text-4xl text-pink-600" />,
     },
     {
       id: "solutions6",
@@ -52,6 +55,7 @@ const FlipCard = () => {
       description:
         "From brand stories to jaw-dropping visuals, our videos don’t just tell stories—they make audiences stop scrolling.",
       bgColor: "bg-teal-200",
+      icon: <FaVideo className="text-4xl text-teal-600" />,
     },
     {
       id: "solutions7",
@@ -60,6 +64,7 @@ const FlipCard = () => {
       description:
         "We make content that’s funny, smart, and drop-dead gorgeous. Your audience? They won’t just look; they’ll stay for the encore.",
       bgColor: "bg-orange-200",
+      icon: <FaBrush className="text-4xl text-orange-600" />,
     },
     {
       id: "solutions8",
@@ -68,11 +73,9 @@ const FlipCard = () => {
       description:
         "No cookie-cutter solutions here! Just bold ideas so wild, your audience will say, ‘Wow, didn’t see that coming!’",
       bgColor: "bg-violet-200",
+      icon: <FaLightbulb className="text-4xl text-violet-600" />,
     },
   ];
-  
-  
-  
   
 
 
@@ -90,13 +93,13 @@ const FlipCard = () => {
 
 
   return (
-    <div id="solution" className="grid grid-cols-1 md:grid-cols-3 gap-6 w-11/12 mx-auto pt-4 mb-10 md:mb-12">
+    <div id="solution" className="grid grid-cols-1 md:grid-cols-3 gap-16 w-11/12 mx-auto pt-4 mb-10 md:mb-12">
       {cards.map((card, index) => (
         <div
           key={card.id}
           ref={(el) => (sectionsRef.current[card.id] = el)}
           id={card.id}
-          className="group w-full sm:w-full md:w-96 h-[350px] perspective"
+          className="group w-full sm:w-full md:w-96 h-[300px] perspective mx-auto"
         >
           <div
             className={`relative w-full h-full rounded-lg transform-style-preserve-3d transition-transform duration-500 ${
@@ -106,9 +109,10 @@ const FlipCard = () => {
             <div
               className={`absolute w-full h-full backface-hidden rounded-2xl overflow-hidden ${card.bgColor}`}
             >
-              <div className="border-2 border-black absolute top-6 left-4 bg-white px-6 py-3 rounded-full text-sm font-semibold">
-                {card.solution}
+              <div className="absolute top-6 left-4">
+                {card.icon}
               </div>
+  
               <div className="absolute top-6 right-4 rounded-full text-sm font-semibold">
                 <img
                   src="https://cdn.prod.website-files.com/66bbc417df501b935e5152c6/66cdb85d740ac1a54de3fdc1_icon-grid.svg"
@@ -116,11 +120,12 @@ const FlipCard = () => {
                   className="w-8"
                 />
               </div>
-
-              <div className="p-4 h-1/2 flex flex-col items-center justify-center mt-20">
-                <h3 className="text-lg md:text-xl font-bold text-left">{card.title}</h3>
+  
+              <div className="p-4 h-1/2 flex flex-col mt-20">
+                <h3 className="text-lg md:text-xl font-bold text-left">{card.solution}</h3>
+                <p className="mt-6">{card.title}</p>
               </div>
-
+  
               <button
                 onClick={() => handleFlip(index)}
                 className="absolute bottom-4 right-4 px-4 py-4 border-2 border-black bg-white rounded-full shadow-md hover:bg-gray-100 transition"
@@ -137,7 +142,7 @@ const FlipCard = () => {
                 </svg>
               </button>
             </div>
-
+  
             <div
               className={`absolute w-full h-full backface-hidden rotate-y-180 rounded-lg flex flex-col items-center justify-center p-6 ${card.bgColor}`}
             >
@@ -166,6 +171,7 @@ const FlipCard = () => {
       ))}
     </div>
   );
+  
 };
 
 export default FlipCard;
