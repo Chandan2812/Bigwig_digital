@@ -1,4 +1,4 @@
-import about from "../assets/Grow_your_business-removebg-preview.webp"
+import about from "../assets/bigwig-img-removebg-preview.png"
 
 const AboutUs = () => {
   return (
