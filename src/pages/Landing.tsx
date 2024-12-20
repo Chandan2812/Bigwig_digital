@@ -10,6 +10,7 @@ import FAQ from '../components/Faq'
 import { useEffect, useState } from 'react'
 import Blog from '../components/Blog'
 import ImageSlider from '../components/ImageSlider'
+import ContactUs from '../components/Contact'
 
 function Landing() {
   const [isVisible, setIsVisible] = useState(false);
@@ -46,6 +47,7 @@ function Landing() {
     <AboutUs/>
     <ImageSlider/>
     <FAQ/>
+    <ContactUs/>
     <Footer/>
     {isVisible && (
         <button
