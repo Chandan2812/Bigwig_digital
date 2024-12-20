@@ -1,61 +1,73 @@
 import { useState,useRef } from "react";
-import social_management from "../assets/social-media-manage.jpg"
-import seo from "../assets/seo1.jpg"
+
 const FlipCard = () => {
   const cards = [
     {
       id: "solution1",
-      solution: "Social Media Management",
-      title: "Finding the Perfect Balance Between Your Brand's Purpose and Social Media Presence",
+      solution: "Lead Management System",
+      title: "Streamlining Your Leads, End-to-End",
       description:
-        "Social media is like a party, and your brand needs to be the life of it—not the awkward one in the corner. With our strategies, you'll charm the crowd, start meaningful conversations, and leave everyone wanting more. All powered by some serious research and trend magic!",
-      image: social_management,
+        "Unleash your digital prowess! With our customized online wizardry, we won't just increase brand awareness but reshuffle the entire deck, ensuring every potential customer has a VIP pass to a seamless journey from discovery to purchase. And missed opportunities? Pfft…they won't stand a chance!",
       bgColor: "bg-yellow-200",
     },
     {
       id: "solution2",
-      solution: "Search Engine Optimization",
-      title: "Boosting Your Online Visibility to Help Your Brand Shine",
+      solution: "Impactful Awareness Campaigns",
+      title: "Provocative Campaigns That'll Make Your Awareness Meter Skyrocket",
       description:
-        "Think of us as your brand’s personal trainer, but for search engines. We’ll whip your online presence into shape, get you climbing those rankings, and have your audience saying, ‘How did we not see this sooner?’",
-      image: seo,
+        "Have a brand itching to glimmer in the vast digital universe? Well, you've hit the jackpot! We're just a bunch of creative maestros armed with integral insights and the newest technology, hell-bent on bulking up your brand with tailor-made strategies. We'll snatch attention, ignite a sentimental wildfire, and flawlessly serve up a platter of measurable success - all topped with a cherry on top!",
       bgColor: "bg-blue-200",
     },
     {
       id: "solution3",
-      solution: "Performance Marketing",
-      title: "Marketing Strategies That Help You Stay Ahead of the Competition",
+      solution: "Influencer Marketing",
+      title: "Amplify Your Brand with Trusted Voices",
       description:
-        "Marketing is a race, and we’re here to make sure you’re not the one tripping over your shoelaces. Our data-driven approach will keep you ahead of the pack, converting browsers into buyers faster than you can say ‘ROI.’",
+        "Get ready to team up with the influencer elite to construct your brand's saga! From our ingenious strategy steps through to the grand final execution, we're primed to help you orchestrate campaigns that not only skyrocket brand awareness and build up trust thicker than a brick wall, but also deliver results that might just make you do a double-take!",
       image: "https://media.licdn.com/dms/image/C4E12AQEewYeoQlcUWA/article-cover_image-shrink_600_2000/0/1627198487357?e=2147483647&v=beta&t=GkhDhML28sg27hBGNbo-mLtzG2LRcReTGtLtFv8YeFM",
       bgColor: "bg-purple-200",
     },
     {
       id: "solution4",
-      solution: "Online Reputation Management",
-      title: "Building and Protecting Your Brand’s Online Reputation",
+      solution: "Live Coverage",
+      title: "Bringing Events to Life, Virtually",
       description:
-        "The internet never forgets, but don’t worry—we’ve got your back. With us on your team, your brand will look so good online that even your competitors might want to leave a five-star review!",
+        "Ditch the FOMO, we've got you covered! Let us teleport your audience straight into the action, making every live event feel like they're on the front row! Whether it's a happening event or a casual occasion, we make the world of pixels an unforgettable experience",
       image: "https://www.minddigital.com/wp-content/uploads/2015/01/Online-Reputation-Management-01.jpg",
       bgColor: "bg-green-200",
     },
     {
       id: "solution5",
-      solution: "Branded Content",
-      title: "Creating Content That Speaks Your Brand’s Language",
+      solution: "Public Relations",
+      title: "Building Bridges with the Media",
       description:
-        "Content is king, but let’s be honest—it also needs to be funny, smart, and look amazing. That’s where we come in. We’ll create content that grabs attention, keeps it, and maybe even gets a standing ovation.",
+        "Crave a little fame? With our savvy media relations skills, we'll transform your winners into headline news. From your cozy town newsletter to the front page of the New York Times, rest assured, your achievements won't go unnoticed. Aren't you already feeling like a celebrity?",
       image: "https://b83eeb945e2915539af8.ucr.io/-/quality/best/https://d1qwl4ymp6qhug.cloudfront.net/Images%20for%20blog/Branded-content-types.png",
       bgColor: "bg-pink-200",
     },
     {
       id: "solution6",
+      solution: "Video Shoots",
+      title: "Crafting Stories, Frame by Frame",
+      description:
+        "Got a brand story to tell, an event to relive, or a documentary to memorialize? We are the cinematographic alchemists you're looking for! We transform your vision into high-definition reality. And our videos? They don't just reach your audience - they have a little chit-chat, share a laugh, and make a deep connection that resonates.",
+      bgColor: "bg-teal-200",
+    },
+    {
+      id: "solution7",
+      solution: "Branded Content",
+      title: "Creating Content That Speaks Your Brand’s Language",
+      description:
+        "Content is king, but let’s be honest—it also needs to be funny, smart, and look amazing. That’s where we come in. We’ll create content that grabs attention, keeps it, and maybe even gets a standing ovation.",
+      bgColor: "bg-orange-200",
+    },
+    {
+      id: "solution8",
       solution: "Creative Innovations",
       title: "Bringing Bold Ideas to Life Through Creative Storytelling",
       description:
         "Your brand deserves more than cookie-cutter creativity. We’ll serve up fresh, jaw-dropping ideas so good they’ll have your audience saying, ‘Wow, I didn’t see that coming!’ Let’s turn your wildest dreams into even wilder realities.",
-      image: "https://blog.webit.org/wp-content/uploads/2015/03/OCIHO30.jpg",
-      bgColor: "bg-teal-200",
+      bgColor: "bg-violet-200",
     },
   ];
   
