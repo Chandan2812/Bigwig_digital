@@ -112,7 +112,7 @@ const FlipCard = () => {
                 <img
                   src={card.image}
                   alt={card.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-fill"
                 />
                 <button
                   onClick={() => handleFlip(index)}
