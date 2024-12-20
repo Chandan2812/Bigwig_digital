@@ -9,6 +9,7 @@ import video from "../assets/videographer-concept-illustration_114360-1504-remov
 import relation from "../assets/Public Relations.png"
 import affiliate from "../assets/Affiliate marketing (1).png"
 import iec from "../assets/IEC.png"
+import google_ad from "../assets/google_ad.png"
 
 type Section = {
   id: number;
@@ -194,6 +195,23 @@ const ScrollSections: React.FC = () => {
       ),
       image: affiliate,
     },
+    {
+      id: 9,
+      backgroundColor: "bg-green-200",
+      content: (
+        <>
+          <h1 className="text-4xl font-bold">Google My Business</h1>
+          <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
+            Elevate Your Local Presence with GMB
+          </div>
+          <p className="mt-4 text-lg leading-relaxed text-justify">
+            Get your business noticed on Google search and maps! With a strategic Google My Business profile, we'll help you attract more local customers, build credibility, and keep your audience engaged. From setup to optimization, we’ll ensure your business shines brightly in your neighborhood and beyond.
+          </p>
+        </>
+      ),
+      image: google_ad, // Replace 'gmb' with the actual imported image variable for Google My Business
+    }
+    
   ];
   
 

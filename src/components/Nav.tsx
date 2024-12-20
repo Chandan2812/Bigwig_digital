@@ -160,6 +160,12 @@ const Nav: React.FC = () => {
                 >
                   Affiliate Marketing
                 </button>
+                <button
+                  className="text-gray-600 hover:text-black text-sm text-left"
+                  onClick={() => handleScroll("solutions9")}
+                >
+                  Google My Business
+                </button>
               </div>
             )}
 
