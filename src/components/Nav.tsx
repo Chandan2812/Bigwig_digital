@@ -102,19 +102,19 @@ const Nav: React.FC = () => {
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solution5")}
                 >
-                  Branded Content
+                  Affiliate Marketing
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solution6")}
                 >
-                  Creative Innovations
+                  Google My Business
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solutions1")}
                 >
-                  Lead Management Systems
+                  Lead Management System
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
@@ -122,50 +122,45 @@ const Nav: React.FC = () => {
                 >
                   Impactful Awareness Campaigns
                 </button>
-                
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solutions3")}
                 >
-                 Influencer Marketing
+                  Influencer Marketing
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solutions4")}
                 >
-                  IEC - Information Education Communication
+                  Live Coverage
                 </button>
+                
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solutions5")}
                 >
-                  Live Coverage
+                 Public Relations
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solutions6")}
                 >
-                  Public Relations
+                  Video Shoots
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solutions7")}
                 >
-                  Video Shoots
+                  Branded Content
                 </button>
-                
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solutions8")}
                 >
-                  Affiliate Marketing
+                 Creative Innovations
                 </button>
-                <button
-                  className="text-gray-600 hover:text-black text-sm text-left"
-                  onClick={() => handleScroll("solutions9")}
-                >
-                  Google My Business
-                </button>
+                
+                
               </div>
             )}
 

@@ -3,7 +3,7 @@ import { useState,useRef } from "react";
 const FlipCard = () => {
   const cards = [
     {
-      id: "solution1",
+      id: "solutions1",
       solution: "Lead Management System",
       title: "Effortlessly Managing Leads from First Click to Final Sale",
       description:
@@ -11,7 +11,7 @@ const FlipCard = () => {
       bgColor: "bg-yellow-200",
     },
     {
-      id: "solution2",
+      id: "solutions2",
       solution: "Impactful Awareness Campaigns",
       title: "Unforgettable Campaigns to Make Your Brand the Talk of the Town",
       description:
@@ -19,7 +19,7 @@ const FlipCard = () => {
       bgColor: "bg-blue-200",
     },
     {
-      id: "solution3",
+      id: "solutions3",
       solution: "Influencer Marketing",
       title: "Amplify Your Brand’s Story with Voices Everyone Trusts",
       description:
@@ -28,7 +28,7 @@ const FlipCard = () => {
       bgColor: "bg-purple-200",
     },
     {
-      id: "solution4",
+      id: "solutions4",
       solution: "Live Coverage",
       title: "Teleporting Your Audience to the Heart of Every Event",
       description:
@@ -37,7 +37,7 @@ const FlipCard = () => {
       bgColor: "bg-green-200",
     },
     {
-      id: "solution5",
+      id: "solutions5",
       solution: "Public Relations",
       title: "Turning Your Achievements into Headlines That Matter",
       description:
@@ -46,7 +46,7 @@ const FlipCard = () => {
       bgColor: "bg-pink-200",
     },
     {
-      id: "solution6",
+      id: "solutions6",
       solution: "Video Shoots",
       title: "Capturing Your Brand’s Essence, One Frame at a Time",
       description:
@@ -54,7 +54,7 @@ const FlipCard = () => {
       bgColor: "bg-teal-200",
     },
     {
-      id: "solution7",
+      id: "solutions7",
       solution: "Branded Content",
       title: "Crafting Clever, Gorgeous Content That Speaks Your Brand’s Soul",
       description:
@@ -62,7 +62,7 @@ const FlipCard = () => {
       bgColor: "bg-orange-200",
     },
     {
-      id: "solution8",
+      id: "solutions8",
       solution: "Creative Innovations",
       title: "Bringing Your Wildest Brand Ideas to Life with Unmatched Flair",
       description:
