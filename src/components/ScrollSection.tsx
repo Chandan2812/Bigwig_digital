@@ -1,8 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import social from "../assets/Handleey-Social-Media-Post.webp"
 import affiliate from "../assets/Affiliate marketing (1).png"
 import google_ad from "../assets/google_ad.png"
+import seo from "../assets/Handleey-Web Analysis-New.webp"
+import performance from "../assets/Handleey-SMS-New.webp"
 
 type Section = {
   id: number;
@@ -73,7 +76,7 @@ const ScrollSections: React.FC = () => {
           Social media is like a party, and your brand needs to be the life of it—not the awkward one in the corner. With our strategies, you'll charm the crowd, start meaningful conversations, and leave everyone wanting more. All powered by some serious research and trend magic!</p>
         </>
       ),
-      image: "https://handleey.com/handleey/assets/img/images/Pending-Reviews.png",
+      image: social,
     },
     {
       id: 2,
@@ -88,7 +91,7 @@ const ScrollSections: React.FC = () => {
           Think of us as your brand’s personal trainer, but for search engines. We’ll whip your online presence into shape, get you climbing those rankings, and have your audience saying, ‘How did we not see this sooner?’          </p>
         </>
       ),
-      image: "https://handleey.com/handleey/assets/img/images/Pending-Reviews.png",
+      image: seo,
     },
     {
       id: 3,
@@ -103,7 +106,7 @@ const ScrollSections: React.FC = () => {
           Marketing is a race, and we’re here to make sure you’re not the one tripping over your shoelaces. Our data-driven approach will keep you ahead of the pack, converting browsers into buyers faster than you can say ‘ROI.’          </p>
         </>
       ),
-      image: "https://handleey.com/handleey/assets/img/images/Pending-Reviews.png",
+      image: performance,
     },
     {
       id: 4,
