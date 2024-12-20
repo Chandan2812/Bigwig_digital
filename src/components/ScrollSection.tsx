@@ -80,7 +80,7 @@ const ScrollSections: React.FC = () => {
           </p>
         </>
       ),
-      image: lms,
+      image: "https://handleey.com/handleey/assets/img/images/Pending-Reviews.png",
     },
     {
       id: 2,
@@ -116,22 +116,6 @@ const ScrollSections: React.FC = () => {
     },
     {
       id: 4,
-      backgroundColor: "bg-red-200",
-      content: (
-        <>
-          <h1 className="text-4xl font-bold">IEC - Information Education Communication</h1>
-          <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
-            Spreading Knowledge, Creating Impact
-          </div>
-          <p className="mt-4 text-lg leading-relaxed text-justify">
-          From daredevil brochures to smooth-talking radio spots, we're the Michelangelo of your marketing materials. We’ll paint a vivid picture that not just dispenses information, but makes it as thrilling to read as a detective novel. Prepare to power up your audience with knowledge so they can leap tall decisions in a single bound
-          </p>
-        </>
-      ),
-      image: iec,
-    },
-    {
-      id: 5,
       backgroundColor: "bg-cyan-200",
       content: (
         <>
@@ -147,7 +131,7 @@ const ScrollSections: React.FC = () => {
       image: live,
     },
     {
-      id: 6,
+      id: 5,
       backgroundColor: "bg-rose-200",
       content: (
         <>
@@ -163,7 +147,7 @@ const ScrollSections: React.FC = () => {
       image: relation,
     },
     {
-      id: 7,
+      id: 6,
       backgroundColor: "bg-gray-200",
       content: (
         <>
@@ -180,7 +164,7 @@ const ScrollSections: React.FC = () => {
     },
     
     {
-      id: 8,
+      id: 7,
       backgroundColor: "bg-rose-200",
       content: (
         <>
@@ -196,7 +180,7 @@ const ScrollSections: React.FC = () => {
       image: affiliate,
     },
     {
-      id: 9,
+      id: 8,
       backgroundColor: "bg-green-200",
       content: (
         <>

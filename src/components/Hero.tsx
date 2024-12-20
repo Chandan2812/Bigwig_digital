@@ -25,8 +25,8 @@ const Hero: React.FC = () => {
       {/* Image Section */}
       <div className="md:w-1/2 flex justify-center md:justify-end">
         <img
-          // src="https://cdn.adglobal360.com/uploads/solution_list/desk-1681797641.jpg"
-          src={hero}
+          src="https://handleey.com/handleey/assets/img/images/Handleey-Social-Media-Post.png"
+          // src={hero}
           alt="Marketing AI Illustration"
           className="w-full md:w-[800px] object-cover rounded-lg"
         />
