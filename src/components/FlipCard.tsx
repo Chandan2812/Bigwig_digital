@@ -5,71 +5,72 @@ const FlipCard = () => {
     {
       id: "solution1",
       solution: "Lead Management System",
-      title: "Streamlining Your Leads, End-to-End",
+      title: "Effortlessly Managing Leads from First Click to Final Sale",
       description:
-        "Unleash your digital prowess! With our customized online wizardry, we won't just increase brand awareness but reshuffle the entire deck, ensuring every potential customer has a VIP pass to a seamless journey from discovery to purchase. And missed opportunities? Pfft…they won't stand a chance!",
+        "Boost your brand with a lead system so smooth, your competitors will wonder if it's magic. Say goodbye to missed opportunities and hello to seamless conversions!",
       bgColor: "bg-yellow-200",
     },
     {
       id: "solution2",
       solution: "Impactful Awareness Campaigns",
-      title: "Provocative Campaigns That'll Make Your Awareness Meter Skyrocket",
+      title: "Unforgettable Campaigns to Make Your Brand the Talk of the Town",
       description:
-        "Have a brand itching to glimmer in the vast digital universe? Well, you've hit the jackpot! We're just a bunch of creative maestros armed with integral insights and the newest technology, hell-bent on bulking up your brand with tailor-made strategies. We'll snatch attention, ignite a sentimental wildfire, and flawlessly serve up a platter of measurable success - all topped with a cherry on top!",
+        "Ready to shine? We’ll grab eyeballs, spark emotions, and deliver success with strategies so good, even your grandma will notice your brand.",
       bgColor: "bg-blue-200",
     },
     {
       id: "solution3",
       solution: "Influencer Marketing",
-      title: "Amplify Your Brand with Trusted Voices",
+      title: "Amplify Your Brand’s Story with Voices Everyone Trusts",
       description:
-        "Get ready to team up with the influencer elite to construct your brand's saga! From our ingenious strategy steps through to the grand final execution, we're primed to help you orchestrate campaigns that not only skyrocket brand awareness and build up trust thicker than a brick wall, but also deliver results that might just make you do a double-take!",
+        "From strategy to stardom, we’ll pair you with influencers who make waves—and results that’ll make you say, ‘Is this real life?’",
       image: "https://media.licdn.com/dms/image/C4E12AQEewYeoQlcUWA/article-cover_image-shrink_600_2000/0/1627198487357?e=2147483647&v=beta&t=GkhDhML28sg27hBGNbo-mLtzG2LRcReTGtLtFv8YeFM",
       bgColor: "bg-purple-200",
     },
     {
       id: "solution4",
       solution: "Live Coverage",
-      title: "Bringing Events to Life, Virtually",
+      title: "Teleporting Your Audience to the Heart of Every Event",
       description:
-        "Ditch the FOMO, we've got you covered! Let us teleport your audience straight into the action, making every live event feel like they're on the front row! Whether it's a happening event or a casual occasion, we make the world of pixels an unforgettable experience",
+        "From concerts to conferences, we’ll bring the action to life—no FOMO, just unforgettable moments straight to their screens.",
       image: "https://www.minddigital.com/wp-content/uploads/2015/01/Online-Reputation-Management-01.jpg",
       bgColor: "bg-green-200",
     },
     {
       id: "solution5",
       solution: "Public Relations",
-      title: "Building Bridges with the Media",
+      title: "Turning Your Achievements into Headlines That Matter",
       description:
-        "Crave a little fame? With our savvy media relations skills, we'll transform your winners into headline news. From your cozy town newsletter to the front page of the New York Times, rest assured, your achievements won't go unnoticed. Aren't you already feeling like a celebrity?",
+        "From local buzz to global fame, we’ll make sure your story lands where it counts. Fame not included, but definitely earned!",
       image: "https://b83eeb945e2915539af8.ucr.io/-/quality/best/https://d1qwl4ymp6qhug.cloudfront.net/Images%20for%20blog/Branded-content-types.png",
       bgColor: "bg-pink-200",
     },
     {
       id: "solution6",
       solution: "Video Shoots",
-      title: "Crafting Stories, Frame by Frame",
+      title: "Capturing Your Brand’s Essence, One Frame at a Time",
       description:
-        "Got a brand story to tell, an event to relive, or a documentary to memorialize? We are the cinematographic alchemists you're looking for! We transform your vision into high-definition reality. And our videos? They don't just reach your audience - they have a little chit-chat, share a laugh, and make a deep connection that resonates.",
+        "From brand stories to jaw-dropping visuals, our videos don’t just tell stories—they make audiences stop scrolling.",
       bgColor: "bg-teal-200",
     },
     {
       id: "solution7",
       solution: "Branded Content",
-      title: "Creating Content That Speaks Your Brand’s Language",
+      title: "Crafting Clever, Gorgeous Content That Speaks Your Brand’s Soul",
       description:
-        "Content is king, but let’s be honest—it also needs to be funny, smart, and look amazing. That’s where we come in. We’ll create content that grabs attention, keeps it, and maybe even gets a standing ovation.",
+        "We make content that’s funny, smart, and drop-dead gorgeous. Your audience? They won’t just look; they’ll stay for the encore.",
       bgColor: "bg-orange-200",
     },
     {
       id: "solution8",
       solution: "Creative Innovations",
-      title: "Bringing Bold Ideas to Life Through Creative Storytelling",
+      title: "Bringing Your Wildest Brand Ideas to Life with Unmatched Flair",
       description:
-        "Your brand deserves more than cookie-cutter creativity. We’ll serve up fresh, jaw-dropping ideas so good they’ll have your audience saying, ‘Wow, I didn’t see that coming!’ Let’s turn your wildest dreams into even wilder realities.",
+        "No cookie-cutter solutions here! Just bold ideas so wild, your audience will say, ‘Wow, didn’t see that coming!’",
       bgColor: "bg-violet-200",
     },
   ];
+  
   
   
   
