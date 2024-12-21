@@ -5,6 +5,7 @@ import social from "../assets/Handleey-Social-Media-Post.webp"
 import google_ad from "../assets/google_ad.png"
 import seo from "../assets/Handleey-Web_Analysis-New-removebg-preview.webp"
 import performance from "../assets/Handleey-SMS-New-removebg-preview.webp"
+import web from "../assets/webdev.png"
 
 type Section = {
   id: number;
@@ -136,7 +137,7 @@ const ScrollSections: React.FC = () => {
           </p>
         </>
       ),
-      image: google_ad,
+      image: web,
     },  
     {
       id: 6,
