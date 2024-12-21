@@ -6,12 +6,15 @@ import google_ad from "../assets/google_ad.png"
 import seo from "../assets/Handleey-Web_Analysis-New-removebg-preview.webp"
 import performance from "../assets/Handleey-SMS-New-removebg-preview.webp"
 import web from "../assets/webdev.png"
+import { FaFacebook, FaInstagram, FaTwitter, FaGoogle, FaMapMarkerAlt, FaMobileAlt, FaShieldAlt, FaStar, FaYoutube, FaChartLine, FaTags, FaPercentage, FaCommentDots, FaGlobe, FaPalette, FaCode, FaLaptopCode, FaBuilding } from "react-icons/fa"; // Example icons
+import { MdSearch, MdOutlineCampaign } from "react-icons/md";
 
 type Section = {
   id: number;
   backgroundColor: string;
   content: React.ReactNode;
   image: string;
+  icons?: React.ReactNode[];
 };
 
 type AnimatedSectionProps = {
@@ -42,6 +45,15 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ section, isReversed }
         className="w-full md:w-1/2 text-black"
       >
         {section.content}
+        {section.icons && (
+          <div className="mt-4 flex gap-4">
+            {section.icons.map((icon, index) => (
+              <span key={index} className="text-2xl">
+                {icon}
+              </span>
+            ))}
+          </div>
+        )}
       </motion.div>
 
       <motion.div
@@ -62,7 +74,6 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ section, isReversed }
 
 const ScrollSections: React.FC = () => {
   const sections: Section[] = [
-    
     {
       id: 1,
       backgroundColor: "bg-yellow-200",
@@ -70,13 +81,20 @@ const ScrollSections: React.FC = () => {
         <>
           <h1 className="text-4xl font-bold">Social Media Management</h1>
           <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
-          Balancing Your Brand's Mission and Social Media Presence
+            Balancing Your Brand's Mission and Social Media Presence
           </div>
           <p className="mt-4 text-lg leading-relaxed text-justify">
-          Social media is like a party, and your brand needs to be the life of it—not the awkward one in the corner. With our strategies, you'll charm the crowd, start meaningful conversations, and leave everyone wanting more. All powered by some serious research and trend magic!</p>
+            Social media is like a party, and your brand needs to be the life of it—not the awkward one in the corner. With our strategies, you'll charm the crowd, start meaningful conversations, and leave everyone wanting more. All powered by some serious research and trend magic!
+          </p>
         </>
       ),
       image: social,
+      icons: [
+        <FaFacebook className="text-blue-600 text-4xl" />,
+        <FaInstagram className="text-pink-500 text-4xl" />,
+        <FaTwitter className="text-blue-600 text-4xl" />,
+        <FaYoutube className="text-red-700 text-4xl" />,
+      ],
     },
     {
       id: 2,
@@ -85,13 +103,20 @@ const ScrollSections: React.FC = () => {
         <>
           <h1 className="text-4xl font-bold">Search Engine Optimization</h1>
           <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
-          Boosting Your Online Visibility to Help Your Brand Shine
+            Boosting Your Online Visibility to Help Your Brand Shine
           </div>
           <p className="mt-4 text-lg leading-relaxed text-justify">
-          Think of us as your brand’s personal trainer, but for search engines. We’ll whip your online presence into shape, get you climbing those rankings, and have your audience saying, ‘How did we not see this sooner?’          </p>
+            Think of us as your brand’s personal trainer, but for search engines. We’ll whip your online presence into shape, get you climbing those rankings, and have your audience saying, ‘How did we not see this sooner?’
+          </p>
         </>
       ),
       image: seo,
+      icons: [
+        <MdSearch className="text-green-600 text-4xl" />,
+        <FaGoogle className="text-red-500 text-4xl" />,
+        <FaChartLine className="text-blue-700 text-4xl" />,
+        <FaTags className="text-yellow-500 text-4xl" />,
+      ],
     },
     {
       id: 3,
@@ -100,13 +125,21 @@ const ScrollSections: React.FC = () => {
         <>
           <h1 className="text-4xl font-bold">Performance Marketing</h1>
           <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
-          Marketing Strategies That Help You Stay Ahead of the Competition
+            Marketing Strategies That Help You Stay Ahead of the Competition
           </div>
           <p className="mt-4 text-lg leading-relaxed text-justify">
-          Marketing is a race, and we’re here to make sure you’re not the one tripping over your shoelaces. Our data-driven approach will keep you ahead of the pack, converting browsers into buyers faster than you can say ‘ROI.’          </p>
+            Marketing is a race, and we’re here to make sure you’re not the one tripping over your shoelaces. Our data-driven approach will keep you ahead of the pack, converting browsers into buyers faster than you can say ‘ROI.’
+          </p>
         </>
       ),
       image: performance,
+      icons: [
+        <MdOutlineCampaign className="text-yellow-500 text-4xl" />,
+        <FaGoogle className="text-red-500 text-4xl" />,
+        <FaChartLine className="text-blue-700 text-4xl" />,
+        <FaPercentage className="text-green-600 text-4xl" />,
+      ],
+      
     },
     {
       id: 4,
@@ -115,14 +148,22 @@ const ScrollSections: React.FC = () => {
         <>
           <h1 className="text-4xl font-bold">Online Reputation Management</h1>
           <div className="mt-2 inline-flex items-center justify-center px-3 py-1 rounded-full bg-white text-black text-sm">
-          Building and Protecting Your Brand’s Online Reputation
+            Building and Protecting Your Brand’s Online Reputation
           </div>
           <p className="mt-4 text-lg leading-relaxed text-justify">
-          The internet never forgets, but don’t worry—we’ve got your back. With us on your team, your brand will look so good online that even your competitors might want to leave a five-star review!          </p>
+            The internet never forgets, but don’t worry—we’ve got your back. With us on your team, your brand will look so good online that even your competitors might want to leave a five-star review!
+          </p>
         </>
       ),
       image: "https://handleey.com/handleey/assets/img/images/Pending-Reviews.png",
-    },  
+      icons: [
+        <FaShieldAlt className="text-blue-500 text-4xl" />,
+        <FaStar className="text-yellow-500 text-4xl" />,
+        <FaCommentDots className="text-green-500 text-4xl" />,
+        <FaGlobe className="text-gray-600 text-4xl" />,
+      ],
+      
+    },
     {
       id: 5,
       backgroundColor: "bg-purple-200",
@@ -138,7 +179,14 @@ const ScrollSections: React.FC = () => {
         </>
       ),
       image: web,
-    },  
+      icons: [
+        <FaPalette className="text-pink-500 text-4xl" />,
+        <FaCode className="text-blue-500 text-4xl" />,
+        <FaMobileAlt className="text-green-500 text-4xl" />,
+        <FaLaptopCode className="text-gray-600 text-4xl" />,
+      ],
+      
+    },
     {
       id: 6,
       backgroundColor: "bg-teal-200",
@@ -153,10 +201,17 @@ const ScrollSections: React.FC = () => {
           </p>
         </>
       ),
-      image: google_ad, // Replace 'gmb' with the actual imported image variable for Google My Business
+      image: google_ad,
+      icons: [
+        <FaGoogle className="text-red-500 text-4xl" />,
+        <FaMapMarkerAlt className="text-green-600 text-4xl" />,
+        <FaBuilding className="text-blue-500 text-4xl" />,
+        <FaStar className="text-yellow-400 text-4xl" />,
+      ],
+      
     },
-    
   ];
+  
   
 
   return (

@@ -14,7 +14,7 @@ const CaseCard: React.FC = () => {
       title: "Social Media Engagement Growth",
       description:
         "For a fashion brand, we leveraged influencer marketing and compelling content to increase social media engagement and drive brand awareness from scratch.",
-      tags: ["Social Media Management", "Influencer Marketing", "Content Creation"],
+      tags: ["Social Media Management", "Influencer Marketing"],
     },
     {
       image:
