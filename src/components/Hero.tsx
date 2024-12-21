@@ -26,21 +26,21 @@ const Hero: React.FC = () => {
       className="flex flex-col md:flex-row items-center justify-between bg-white mt-5 mb-10 md:mb-12 px-4 md:px-16"
     >
       {/* Text Section */}
-      <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0 ">
+      <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
         {trail.map((style, index) => (
           <animated.div key={index} style={style} className="mb-2">
             {index === 0 || index === 1 ? (
               <h1
-                className={`text-4xl md:text-5xl font-bold ${
+                className={`text-4xl md:text-6xl font-bold ${
                   index === 1 ? "line-through text-gray-400" : ""
                 }`}
               >
                 {items[index]}
               </h1>
             ) : index === 2 ? (
-              <h1 className="text-4xl md:text-5xl font-bold">{items[index]}</h1>
+              <h1 className="text-4xl md:text-6xl font-bold">{items[index]}</h1>
             ) : index === 3 ? (
-              <h1 className="text-3xl md:text-5xl font-bold text-red-500 italic">
+              <h1 className="text-3xl md:text-6xl font-bold text-red-500 italic">
                 {items[index]}
               </h1>
             ) : (
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
         <img
           src={hero_img}
           alt="Marketing AI Illustration"
-          className="w-full md:w-[800px] md:h-[300px] object-cover rounded-lg"
+          className="w-full md:w-[800px] object-cover rounded-lg"
         />
       </div>
     </div>
