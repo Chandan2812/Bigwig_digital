@@ -2,8 +2,8 @@ import about from "../assets/bigwig-img-removebg-preview.png"
 
 const AboutUs = () => {
   return (
-    <section id="about" className="  py-16 px-8 md:px-14 lg:px-20">
-                <h2 className="text-3xl font-semibold text-gray-900 mb-8 text-center">
+    <section id="about" className=" px-8 md:px-14 lg:px-20">
+                <h2 className="text-3xl font-semibold text-gray-900 mb-4 text-center">
             About Us
           </h2>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
