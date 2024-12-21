@@ -1,5 +1,6 @@
 import React from "react";
 import { useTrail, animated } from "@react-spring/web"; // Import animations
+import hero_img from "../assets/marketing-online-strategy-with-drawings-removebg-preview.png"
 
 const Hero: React.FC = () => {
   // Content for animation
@@ -52,7 +53,7 @@ const Hero: React.FC = () => {
       {/* Image Section */}
       <div className="md:w-1/2 flex justify-center md:justify-end">
         <img
-          src="https://handleey.com/handleey/assets/img/images/Handleey-Social-Media-Post.png"
+          src={hero_img}
           alt="Marketing AI Illustration"
           className="w-full md:w-[800px] object-cover rounded-lg"
         />
