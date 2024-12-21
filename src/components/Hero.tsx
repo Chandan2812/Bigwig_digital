@@ -1,6 +1,6 @@
 import React from "react";
 import { useTrail, animated } from "@react-spring/web"; // Import animations
-import hero_img from "../assets/marketing-online-strategy-with-drawings-removebg-preview.png"
+import hero_img from "../assets/desk-office-with-online-marketing-business-concept-removebg-preview.png"
 
 const Hero: React.FC = () => {
   // Content for animation
