@@ -138,7 +138,7 @@ const FlipCard = () => {
   
               <button
                 onClick={() => handleFlip(index)}
-                className="absolute bottom-4 right-4 px-4 py-4 border-2 border-black bg-white rounded-full shadow-md hover:bg-gray-100 transition"
+                className="absolute bottom-4 right-4 px-4 py-4 border-2 border-r-4 border-black bg-white rounded-full shadow-md hover:bg-gray-100 transition"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +171,7 @@ const FlipCard = () => {
               </p>
               <button
                 onClick={() => handleFlip(index)}
-                className="px-5 py-4 border-2 border-black absolute bottom-4 right-4 bg-white rounded-full shadow-md hover:bg-gray-100 transition font-bold text-2xl"
+                className="px-4 py-3 border-2 border-r-4 border-black absolute bottom-4 right-4 bg-white rounded-full shadow-md hover:bg-gray-100 transition font-bold text-2xl"
               >
                 —
               </button>
