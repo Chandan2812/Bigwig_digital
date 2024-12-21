@@ -8,7 +8,8 @@ const Nav: React.FC = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       const offset = 70; // Adjust for sticky navbar height
-      const sectionTop = section.getBoundingClientRect().top + window.scrollY - offset;
+      const sectionTop =
+        section.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top: sectionTop, behavior: "smooth" });
     }
     setIsMobileMenuOpen(false); // Close the mobile menu
@@ -64,7 +65,29 @@ const Nav: React.FC = () => {
             className="relative"
           >
             <button className="relative overflow-hidden group rounded-lg px-3 py-2">
-              <span className="relative z-10">Solutions</span>
+              <span className="relative z-10 flex items-center">
+                Solutions
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="2"
+                  stroke="currentColor"
+                  className="w-4 h-4 ml-1 transition-transform duration-200"
+                  style={{
+                    transform: isSolutionsOpen
+                      ? "rotate(180deg)"
+                      : "rotate(0deg)",
+                  }}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </span>
+
               <span className="absolute inset-0 bg-gray-200 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out"></span>
             </button>
             {/* Dropdown Container */}
@@ -134,12 +157,12 @@ const Nav: React.FC = () => {
                 >
                   Live Coverage
                 </button>
-                
+
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solutions5")}
                 >
-                 Public Relations
+                  Public Relations
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
@@ -157,19 +180,16 @@ const Nav: React.FC = () => {
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solutions8")}
                 >
-                 Creative Innovations
+                  Creative Innovations
                 </button>
                 <button
                   className="text-gray-600 hover:text-black text-sm text-left"
                   onClick={() => handleScroll("solutions9")}
                 >
-                 Affiliate Marketing
+                  Affiliate Marketing
                 </button>
-                
-                
               </div>
             )}
-
           </li>
           <li>
             <button
