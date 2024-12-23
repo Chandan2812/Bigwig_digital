@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
             ) : index === 2 ? (
               <h1 className="text-4xl md:text-6xl font-bold">{items[index]}</h1>
             ) : index === 3 ? (
-              <h1 className="text-3xl md:text-6xl font-bold text-red-500 italic">
+              <h1 className="text-3xl md:text-6xl font-bold text-blue-500 italic">
                 {items[index]}
               </h1>
             ) : (
